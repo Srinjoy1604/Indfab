@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body
+{
+    overflow-x: hidden;
+}
+.CardBlock {
+    display: grid;
+    margin: 3%;
+    margin-top: 0;
+    /* position: absolute;
+    bottom: -35%; */
+    /* grid-auto-flow: column; */
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    background-image: url("../images/Home/layered-waves-haikei (1).svg");
+    background-repeat: repeat-x;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 1%;
+
+
+
+}
+
+.IntroDiv {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 0;
+}
+
+.RedBlock {
+    background-color: red;
+    border: 1px solid black;
+    width: min-content;
+    padding: 2%;
+    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    align-content: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 16px;
+    transition: 0.7s ease-in-out all;
+    border: none;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+.WhiteBlock {
+    background-color: rgb(208, 201, 201);
+    border: none;
+    width: 368px;
+    height: 400px;
+    padding: 2%;
+    position: relative;
+    border-radius: 16px;
+
+}
+
+
+.CardBlock h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Tektur", sans-serif;
+    font-weight: 600;
+}
+
+.Block1 {
+    transform: translateX(0px);
+    position: absolute;
+    top: 0;
+    width: 350px;
+
+}
+
+.Block2 {
+    transform: translateX(-50px);
+    bottom: 40%;
+    position: absolute;
+}
+
+.Block3 {
+
+    transform: translateX(35px);
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.GroupProfile {
+    grid-column: 2/ 4;
+}
+.Section3
+{
+    background-color: #242424;
+    width: 100%;
+    /* padding: 2%; */
+    padding-top: 0;
+    color: white;
+}
+.Section3Body
+{
+    padding: 2%;
+    padding-top: 2%;
+}
+.Section3Body h1
+{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.Section3Body ul
+{
+    display: grid;
+    place-items: start;
+    align-content: center;
+    margin: 2%;
+}
+.Section3Body ul li
+{
+    /* text-align: center; */
+    margin: 0.5%;
+    font-family: "Poppins", sans-serif;
+}
+.Section3line
+{
+    width: 100%;
+    height: 10px;
+    background-color: red;
+    padding: 0;
+}
+.Section3 ul 
+{
+  list-style:circle;
+}
+.IsoSection img
+{
+    width: 100px;
+    height: auto;
+}
+.IsoSection
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 1px solid black;
+    margin: 1%;
+    place-items: center;
+    border-radius: 16px;
+    background-color: wheat;
+}
+.Isolink
+{
+    text-align: center;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    margin: 1%;
+    grid-column: 1/4;
+    font-weight: 700;
+    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+}
+.IsoSection a
+{
+    color: red;
+    margin: 1%;
+    display: grid;
+    grid-template-columns:2/3 ;
+    font-weight: 500;
+}
+.IsoSection img
+{
+    mix-blend-mode:multiply;
+}
+.IsoSectionPara 
+{
+    padding: 1%;
+    grid-column: 1/4;
+    
+}
+.IsoSectionPara p
+{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+.CardSection
+{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    place-items: center;
+    gap: 1%;
+    padding: 2%;
+    padding-top: 0;
+    z-index: 0;
+}
+.CardSection1
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+}
+.QualitiesSectiontitle{
+    background-color:rgb(239, 230, 213);
+    font-size: 3rem;
+    height: 300px;
+    align-content: center;
+    text-align: center;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #242424;
+}
+.MapSection
+{
+    margin: 2%;
+}
+.MapSection p
+{
+    margin: 1%;
+    padding: 0 1%;
+    color: #656464;
+    font-weight: 600;
+    font-size: 1.2rem;
+    word-wrap: break-word;
+    
+}
+.MapSectiontitle
+{
+
+    display:flex;
+    align-content: center;
+}
+.MapSectiontitle h1
+{
+    font-size: 2rem;
+    padding: 1%;
+}
+.MapSectiontitle img
+{
+    width: 45px;
+    height: auto;
+    color: #242424;
+    
+
+}
+.MapSectiontitle span
+{
+    width: fit-content;
+}
+
+@media (max-width:832px) {
+    .CardBlock {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: row;
+        background-repeat: no-repeat;
+    }
+}
+@media (max-width:650px) {
+    .CardBlock {
+        
+        grid-auto-flow: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        
+    }
+}
+@media (max-width:808px) {
+
+
+    .GroupProfile {
+        grid-column: 1/ 3;
+    }
+}
+@media (max-width:1162px) {
+    .CardSection
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:780px) {
+    .CardSection
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width:641px) {
+    .CardSection1
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width:518px) {
+    .Block2
+    {
+        transform: translateX(0);
+    }
+    .Block3
+    {
+        transform: translateX(0);
+    }
+    .CardBlock
+    {
+        display: grid;
+        place-items: center;
+    }
+    .WhiteBlock
+    {
+        width: 300px;
+
+    }
+    .RedBlock
+    {
+        width: 270px;
+    }
+    .GroupProfile {
+        display: grid;
+        place-items: center;
+        grid-column: 1/ 1;
+    }
+}

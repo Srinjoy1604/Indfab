@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.cardMain
+{
+    display: grid;
+    place-items: center;
+    width: 270px;
+    height: auto;
+    /* background-color: rgb(206, 202, 192); */
+    background: rgba(196, 191, 191, 0.52);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(196, 191, 191, 0.3);
+    cursor: pointer;
+}
+.cardMain div
+{
+    width: 100%;
+}
+.cardMain p
+{
+    margin-bottom:15%;
+    padding: 5%;
+    font-family: "Poppins", sans-serif;
+    text-align:left;
+}
+.cardMain h1
+{
+    width: 100%;
+
+    margin: 0;
+    padding: 3%;
+    font-size: 1.5rem;
+    
+    color: red;
+
+}
+.cardLink a
+{
+    width: 100%;
+    padding: 2%;
+    padding-bottom: 3%;
+    color: red;
+    font-weight: 500;
+}
+.cardHeading
+{
+    display: grid;
+    place-items: start;
+}
+.cardLink
+{
+    padding: 2%;
+    width: 100%;
+}
+.cardLinkDiv
+{
+    margin-bottom: 3%;
+    margin-left: 2%;
+}
+
+.cardMain:hover h1
+{
+    border-radius: 16px 16px 0 0;
+    background: rgb(0, 0, 0);
+    color: white;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.cardMain:hover .cardBody
+{
+    background: rgba(6, 6, 6, 0.3);
+    color: white;
+    border-radius: 0 0 16px 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.5px);
+-webkit-backdrop-filter: blur(5.5px);
+border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.tableData
+{
+    width: 100%;
+    height: auto;
+    padding: 2%;
+}
+.tableData ul
+{
+    display: grid;
+    gap: 0;
+
+}
+.tableData ul p
+{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    text-align: center;
+}
+.tableData ul h2
+{
+    background-color: rgb(239, 213, 96);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+.cardMain:hover h2
+{
+    color: black;
+}
+.cardMain:hover p
+{
+    color: black;
+}

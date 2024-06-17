@@ -1,0 +1,23 @@
+.Maindash
+{ 
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    margin: 1% 0;
+    padding: 2%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.carouselmain
+{
+    width: 65vw;
+    height: auto;
+    display: grid;
+    place-items: center;
+    margin: 2%;
+}
+.carouselmain img
+{
+    width: 100%;
+}

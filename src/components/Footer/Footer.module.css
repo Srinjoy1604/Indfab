@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.FooterMain {
+    background-color: rgb(37, 36, 36);
+    color: white;
+    display: grid;
+    font-family: "Poppins", sans-serif;
+}
+
+.FooterMainInside {
+
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+
+}
+
+.FooterList {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: start;
+    margin-top: 5%;
+    margin-left: 2%;
+    gap: 1%;
+}
+
+.FooterItem {
+    display: grid;
+    padding: 2%;
+    gap: 2%;
+    font-size: 1rem;
+    place-items: center;
+}
+
+.FooterItem ul {
+    display: grid;
+    list-style: disc;
+}
+
+.FooterItem li {
+    margin: 2%;
+
+
+}
+
+.FooterItem h2 {
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: #ff6347;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 2px;
+    font-size: 1.5rem;
+}
+
+.FooterTag {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 2%;
+
+}
+
+.FooterTag img {
+    width: 200px;
+    height: auto;
+    background-color: rgb(193, 193, 193);
+}
+
+.FooterTag p {
+    background-color: #ff6347;
+}
+
+.FooterBottom {
+    background-color: rgb(211, 207, 207);
+    color: black;
+    text-align: center;
+    border: 2px solid grey;
+    font-size: 0.8rem;
+}
+.LastGroup{
+    grid-column: 3/4;
+    
+}
+@media (max-width:773px) {
+    .FooterItem {
+        font-size: 0.6rem;
+    }
+
+    .FooterTag img {
+        width: 100px;
+        height: auto;
+
+    }
+    .FooterTag p
+    {
+        font-size: 0.6rem;
+    }
+    .FooterItem h2 {
+
+        font-size: 1rem;
+    }
+    .FooterList {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .LastGroup
+    {
+        grid-column: 1/3;
+        
+    }
+}

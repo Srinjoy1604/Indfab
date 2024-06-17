@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+.main {
+    width: 100%;
+    top: 0;
+    /* position: sticky; */
+    z-index: 2;
+    transition: top 0.3s;
+
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Hamburger */
+.hamburger {
+    margin: 5px;
+    display: none;
+
+}
+
+.isactive .line:nth-child(2) {
+    opacity: 0;
+}
+
+.tabs {
+    display: grid;
+    /* grid-auto-flow: column; */
+    margin: 2%;
+    place-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.tabs1
+{
+    display: grid;
+    text-align: center;
+    place-items: center;
+}
+
+.tabs1 li {
+    font-size: 1rem;
+    cursor: pointer;
+    /* text-transform: uppercase; */
+    font-family: sans-serif;
+
+}
+
+.tabs1 li:hover {
+    background-color: #252831;
+}
+
+.tabs1 li a {
+    padding: 0;
+}
+
+.isactive .line:nth-child(1) {
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
+    transform: translateY(13px) rotate(45deg);
+}
+
+.isactive .line:nth-child(3) {
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+.hamburger .line {
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.hamburger:hover {
+    cursor: pointer;
+
+}
+
+/* ////////////////////////// */
+/* sidebar */
+
+.sidebar {
+    width: 40vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    padding-top: 2vh;
+    position: absolute;
+    font-family: "Audiowide", sans-serif;
+    left: -100%;
+    z-index: 1;
+    transition: 0.6s ease-in-out left;
+    /* transform: translateX(-100%); */
+    /* display: none; */
+    /* z-index: 5; */
+    display: none;
+
+
+}
+
+.sidebar ul {
+    /* margin: 10%; */
+    list-style-type: none;
+
+}
+
+.sidebar ul li {
+    /* margin: 2%; */
+    border: 1px solid silver;
+    width: 100%;
+}
+
+
+.sidebar ul li a {
+    padding: 2% 5%;
+    /* width: 100%; */
+    z-index: 1;
+    /* display: grid; */
+    /* grid-auto-flow: column; */
+    /* place-items: center; */
+    color: white;
+    transition: 0.2s ease-in all;
+
+
+
+}
+
+.sidebar ul li a:active {
+    display: block;
+
+}
+
+.sidebar ul li a:hover {}
+
+.sidebar ul {
+    padding: 0;
+
+}
+
+.sidebar.navactive {
+    left: 0;
+}
+
+@media screen and (max-width: 433px) {
+    .sidebar {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 306px) {
+    .header {
+        font-size: 40%;
+    }
+}
+
+/* +++++++++++++++++ */
+.Topnav {
+
+
+    display: grid;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+    font-size: 1rem;
+    font-family: "Tektur", sans-serif;
+    /* background-color: black; */
+    background: rgba(0, 0, 0, 0.47);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    grid-auto-flow: column;
+    gap: 1%;
+    position:absolute;
+    width: 100vw;
+    grid-template-columns: 150px 1fr;
+    
+    /* top:0;
+    position: sticky; */
+    /* width: 100%; */
+}
+
+.Logoimg {
+    display: grid;
+    place-items: center;
+    background-color: #9c9999;
+}
+
+.Logoimg img {
+    width: 140px;
+    height: min-content;
+
+}
+
+.Topnav ul {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    color: white;
+    margin: 0;
+    font-size: 1rem;
+
+}
+
+
+
+.Topnav ul li {
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+    width: fit-content;
+
+}
+
+.Topnav li:hover {
+    box-shadow: silver;
+    color: #eb0000;
+    transition: color 0.5s ease-in;
+}
+
+.Dropdownshow {
+    display: grid;
+    /* background-color: yellow; */
+    color: black;
+    padding: 0.5%;
+    /* background-image: linear-gradient(to bottom, #ff0000, #f0211d, #e0312e, #cf3d3b, #bd4645, #b34d4d, #a85454, #9c5a5a, #966161, #906868, #896f6f, #817575); */
+
+/* From https://css.glass */
+/* background: rgba(15, 15, 15, 0.62);
+border-radius: 12px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.3px);
+-webkit-backdrop-filter: blur(8.3px);
+border: 1px solid rgba(0, 0, 0, 0.46); */
+    background-color: whitesmoke;
+    border-radius: 12px;
+
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
+
+
+    position: absolute;
+}
+
+.Dropdown {
+    padding: 0.5%;
+    background-image: linear-gradient(to bottom, #ff0000, #f0211d, #e0312e, #cf3d3b, #bd4645, #b34d4d, #a85454, #9c5a5a, #966161, #906868, #896f6f, #817575);
+    transition: 1s ease-in-out all;
+    z-index: 1000;
+    padding: 1%;
+    width: 100%;
+
+}
+
+
+.tabsD {
+    display: grid;
+    text-align: center;
+    place-items: center;
+    padding: 2%;
+}
+
+.Dropdown div {
+    border: 1px solid black;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    width: auto;
+    height: auto;
+    display: grid;
+    place-items: center;
+    font-family: sans-serif;
+    font-weight: 400;
+    word-spacing: 0px;
+    cursor: pointer;
+    transition: 1s ease-in-out all;
+}
+
+.Dropdown div a {
+    color: rgb(174, 241, 241);
+    transition: 1s ease-in-out all;
+}
+
+.Dropdown div a:hover {
+    color: #00DDEB;
+    cursor: pointer;
+}
+
+.Dropdown div a {
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.Dropdownshow div {
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+    margin: 2%;
+
+}
+
+.Dropdownshow div a {
+    color: #c6edf0;
+    color: #252831;
+    text-align: center;
+    transition: 0.5s ease-in-out all;
+
+}
+.Dropdownshow div:hover
+{
+    background-color: #252831;
+}
+.Dropdownshow div:hover a{
+    color: #66dfe7;
+}
+
+.Dropdownhide {
+    display: none;
+}
+
+@media(max-width:885px) {
+    .Topnav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .Topnav {
+        display: grid;
+        place-items: start;
+        position: relative;
+    }
+
+    .sidebar {
+        display: block;
+       
+    }
+
+}
