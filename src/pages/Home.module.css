@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-body
-{
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+body {
     overflow-x: hidden;
 }
+
 .CardBlock {
     display: grid;
     margin: 3%;
@@ -93,65 +95,65 @@ body
 .GroupProfile {
     grid-column: 2/ 4;
 }
-.Section3
-{
+
+.Section3 {
     background-color: #242424;
     width: 100%;
     /* padding: 2%; */
     padding-top: 0;
     color: white;
 }
-.Section3Body
-{
+
+.Section3Body {
     padding: 2%;
     padding-top: 2%;
 }
-.Section3Body h1
-{
+
+.Section3Body h1 {
     text-align: center;
     font-size: 2.5rem;
 }
-.Section3Body ul
-{
+
+.Section3Body ul {
     display: grid;
     place-items: start;
     align-content: center;
     margin: 2%;
 }
-.Section3Body ul li
-{
+
+.Section3Body ul li {
     /* text-align: center; */
     margin: 0.5%;
     font-family: "Poppins", sans-serif;
 }
-.Section3line
-{
+
+.Section3line {
     width: 100%;
     height: 10px;
     background-color: red;
     padding: 0;
 }
-.Section3 ul 
-{
-  list-style:circle;
+
+.Section3 ul {
+    list-style: circle;
 }
-.IsoSection img
-{
+
+.IsoSection img {
     width: 100px;
     height: auto;
 }
-.IsoSection
-{
+
+.IsoSection {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     border: 1px solid black;
     margin: 1%;
     place-items: center;
     border-radius: 16px;
     background-color: wheat;
 }
-.Isolink
-{
+
+.Isolink {
     text-align: center;
     display: grid;
     place-items: center;
@@ -162,31 +164,31 @@ body
     font-size: 1.1rem;
     font-family: "Poppins", sans-serif;
 }
-.IsoSection a
-{
+
+.IsoSection a {
     color: red;
     margin: 1%;
     display: grid;
-    grid-template-columns:2/3 ;
+    grid-template-columns: 2/3;
     font-weight: 500;
 }
-.IsoSection img
-{
-    mix-blend-mode:multiply;
+
+.IsoSection img {
+    mix-blend-mode: multiply;
 }
-.IsoSectionPara 
-{
+
+.IsoSectionPara {
     padding: 1%;
     grid-column: 1/4;
-    
+
 }
-.IsoSectionPara p
-{
+
+.IsoSectionPara p {
     text-align: center;
     font-family: "Poppins", sans-serif;
 }
-.CardSection
-{
+
+.CardSection {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     place-items: center;
@@ -195,59 +197,147 @@ body
     padding-top: 0;
     z-index: 0;
 }
-.CardSection1
-{
+
+.CardSection1 {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     place-items: center;
 }
-.QualitiesSectiontitle{
-    background-color:rgb(239, 230, 213);
+
+.QualitiesSectiontitle {
+    background-color: rgb(239, 230, 213);
     font-size: 3rem;
     height: 300px;
     align-content: center;
     text-align: center;
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: #242424;
 }
-.MapSection
-{
+
+.MapSection {
     margin: 2%;
 }
-.MapSection p
-{
+
+.MapSection p {
     margin: 1%;
     padding: 0 1%;
     color: #656464;
     font-weight: 600;
     font-size: 1.2rem;
     word-wrap: break-word;
-    
-}
-.MapSectiontitle
-{
 
-    display:flex;
+}
+
+.MapSectiontitle {
+
+    display: flex;
     align-content: center;
 }
-.MapSectiontitle h1
-{
+
+.MapSectiontitle h1 {
     font-size: 2rem;
     padding: 1%;
 }
-.MapSectiontitle img
-{
+
+.MapSectiontitle img {
     width: 45px;
     height: auto;
     color: #242424;
-    
+
 
 }
-.MapSectiontitle span
-{
+
+.MapSectiontitle span {
     width: fit-content;
+}
+
+.MapDivide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.EachMap {
+    border: 1px solid black;
+    padding: 2%;
+    border-radius: 12px;
+    margin: 0.5%;
+    /* background-color: #242424; */
+}
+
+.EachMap h1 {
+    font-size: 1.5rem;
+    color: rgb(224, 36, 22);
+    text-align: center;
+}
+
+.OurFounder {
+    background: url("../images/Home/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    place-items: center;
+}
+
+.OurFounder_h1 {
+    font-size: 4.9rem;
+    color: white;
+    font-family: "Oxanium", sans-serif;
+    border-left: 5px solid rgb(255, 0, 0);
+    padding-left: 3%;
+    background-color: #242424b7;
+    padding-right: 2%;
+
+}
+
+.OurFounder_para {
+    color: white;
+    padding: 2%;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+@media (max-width:358px) {
+    .MapDivide {
+       
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:888px) {
+    .OurFounder_h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:776px) {
+    .OurFounder {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .OurFounder_h1 {
+        grid-row: 1/2;
+
+    }
+
+
+}
+
+@media (max-width:443px) {
+    .OurFounder_h1 {
+        font-size: 3rem;
+    }
+
+    .OurFounder_para {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width:832px) {
@@ -257,15 +347,17 @@ body
         background-repeat: no-repeat;
     }
 }
+
 @media (max-width:650px) {
     .CardBlock {
-        
+
         grid-auto-flow: column;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5,1fr);
-        
+        grid-template-rows: repeat(5, 1fr);
+
     }
 }
+
 @media (max-width:808px) {
 
 
@@ -273,49 +365,48 @@ body
         grid-column: 1/ 3;
     }
 }
+
 @media (max-width:1162px) {
-    .CardSection
-    {
-        grid-template-columns: repeat(2,1fr);
+    .CardSection {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width:780px) {
-    .CardSection
-    {
-        grid-template-columns: repeat(1,1fr);
+    .CardSection {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
+
 @media (max-width:641px) {
-    .CardSection1
-    {
-        grid-template-columns: repeat(1,1fr);
+    .CardSection1 {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
 @media (max-width:518px) {
-    .Block2
-    {
+    .Block2 {
         transform: translateX(0);
     }
-    .Block3
-    {
+
+    .Block3 {
         transform: translateX(0);
     }
-    .CardBlock
-    {
+
+    .CardBlock {
         display: grid;
         place-items: center;
     }
-    .WhiteBlock
-    {
+
+    .WhiteBlock {
         width: 300px;
 
     }
-    .RedBlock
-    {
+
+    .RedBlock {
         width: 270px;
     }
+
     .GroupProfile {
         display: grid;
         place-items: center;

@@ -199,7 +199,7 @@
 .Logoimg {
     display: grid;
     place-items: center;
-    background-color: #9c9999;
+    background-color: whitesmoke;
 }
 
 .Logoimg img {

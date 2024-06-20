@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import styles from "./Footer.module.css";
-import logo from "../../images/Home/logo.png";
+import logo from "../../images/Home/TRANSPARENT BACKGROUND(NEW).png";
 function Footer() {
     return (
         <div className={`${styles.FooterMain}`}>
@@ -41,11 +41,10 @@ function Footer() {
                 </div>
                 <div className={`${styles.FooterTag}`}>
                     <div><img src={logo}></img></div>
-                    <h1>Indfab Projects Private Limited</h1>
                     <p>FCI road Nalco Nagar- 759145 Angul,Odisha,India</p>
                 </div>
             </div>
-            <div className={`${styles.FooterBottom}`}><p>&copy; 2024 Indfab Projects Private Limited,All rights reserved.</p>
+            <div className={`${styles.FooterBottom}`}><p>&copy; 2024 Indfab,All rights reserved.</p>
                 {/*<p>designed by <a href="/">Srinjoy Roy</a></p>*/}
             </div>
         </div>

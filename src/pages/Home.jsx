@@ -5,9 +5,9 @@ import Navbar from "@/components/Navbar/Navbar";
 import CredentialBar from "@/components/CredentialBar/CredentialBar";
 import CustomCard from "@/components/Cards/CustomCard";
 import { color, motion } from "framer-motion";
-import iso1 from "../images/Home/ISO_9001.png";
+import iso1 from "../images/Home/927_iso9001_logo.jpg";
 import iso2 from "../images/Home/iso-14001-logo-E5046E951F-seeklogo.com.png";
-import iso3 from "../images/Home/iso-45001-2018.jpg";
+import iso3 from "../images/Home/ISO-45001-logo.png";
 import CustomCard2 from "@/components/Cards/CustomCard2";
 import crdimg1 from "../images/Home/314130.png";
 import crdimg2 from "../images/Home/manufacture(edited).png";
@@ -29,7 +29,7 @@ function Home() {
                 <Intro />
 
             </div>
-            <div className={`${styles.CardBlock}`}>
+            {/*<div className={`${styles.CardBlock}`}>
                 <CustomCard heading={"Founder"} description={"Group Company INDFAB was promoted as a small scale industry in the year 1985 by Prabhat Palit a techno entrepreneur with over 33 years of varied experience in construction industries."} link={"#"} tabular={false} />
                 <CustomCard heading={"Our journey"} description={"Indfab, worked as a sub — vendor of reputed companies like Flak India, McNally Bharat and BST Engineering. Indfab, took up plant maintenance job in the areas of fume treatment plant, alumina handling system, pot room equipment."} link={"#"} tabular={false} />
                 <CustomCard heading={"Office detail"} link={"#"} tabular={true} />
@@ -67,9 +67,23 @@ function Home() {
                     </div>
                 </div>
 
+            </div>*/}
+            <div className={`${styles.OurFounder}`}>
+                <div className={`${styles.OurFounder_para}`}>
+                    <p>
+                        Group Company INDFAB was promoted as a small scale industry in the year 1985 by Prabhat Palit a techno entrepreneur with over 33 years of varied experience in construction industries.
+                    </p>
+                    <p>
+
+                        In this family owned business other two promoters Kalyan Palit and Ashish Palit have worked closely contributing towards growth, consolidation in different functional area, diversification programme and customer relation.
+                    </p>
+                </div>
+                <div className={`${styles.OurFounder_h1}`}>
+                    <h1>Our Founder</h1>
+                </div>
             </div>
             <div className={`${styles.IsoSection}`}>
-                <div><img src={iso1}></img></div>
+                <div><img src={iso1} style={{ width: "170px" }}></img></div>
                 <div><img src={iso2}></img></div>
                 <div><img src={iso3}></img></div>
                 <div className={`${styles.IsoSectionPara}`}>
@@ -107,23 +121,36 @@ function Home() {
             </div>
             <div className={`${styles.MapSection}`}>
                 <div className={`${styles.MapSectiontitle}`}>
-                <img src={locimg}/><h1><span style={{color:"red"}}>Our</span><span> Location</span></h1>
+                    <img src={locimg} /><h1><span style={{ color: "red" }}>Our</span><span> Location</span></h1>
                 </div>
                 <p>Established in 1985 at periphery of smelter and captive power plat of NALCO, Nalconagar, Angul and also at Kurunti
-                by the side of National Highway 55, Dhenkanal amidst Industrial Hub of Power and Steel Plant. The nearest Airport is at
-                a distance of 150 Km by road. The driving time is approximately three hours. There are direct train from Bhubneswar to
-                Angul.And it is around 02KM from TATA Steel Limited, Meramandali, Dhenkanal, Odisha on the National Highway.</p>
-                <div>
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14916.918410101498!2d85.2628896!3d20.8224329!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a18c7f21225544f%3A0xf20621315add449b!2sIndfab%20Projects!5e0!3m2!1sen!2sin!4v1717681503247!5m2!1sen!2sin" 
-                  width="600" 
-                  height="450" 
-                  style={{border:0,width:"100%",padding:"2%"}} 
-                  allowFullScreen="" 
-                  loading="lazy" 
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
+                    by the side of National Highway 55, Dhenkanal amidst Industrial Hub of Power and Steel Plant. The nearest Airport is at
+                    a distance of 150 Km by road. The driving time is approximately three hours. There are direct train from Bhubneswar to
+                    Angul.And it is around 02KM from TATA Steel Limited, Meramandali, Dhenkanal, Odisha on the National Highway.</p>
+                <div className={`${styles.MapDivide}`}>
+                    <div className={`${styles.EachMap}`}>
+                        <h1>Meramandali MSME unit</h1>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14916.918410101498!2d85.2628896!3d20.8224329!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a18c7f21225544f%3A0xf20621315add449b!2sIndfab%20Projects!5e0!3m2!1sen!2sin!4v1717681503247!5m2!1sen!2sin"
+                            width="600"
+                            height="450"
+                            style={{ border: 0, width: "100%", padding: "2%" }}
+                            allowFullScreen=""
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                    <div className={`${styles.EachMap}`}>
+                        <h1>Nalconagar MSME unit</h1>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.6133931762283!2d85.16018749999999!3d20.847312499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a18b0907060f427%3A0x18ee5a1a94651870!2sIndfab!5e0!3m2!1sen!2sin!4v1718901516471!5m2!1sen!2sin" 
+                        width="600"
+                        height="450"
+                        style={{ border: 0, width: "100%", padding: "2%" }}
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
             <Footer />
         </div>
