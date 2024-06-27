@@ -8,3 +8,21 @@
     font-weight: 700;
     font-family: "Oxanium", sans-serif;
 }
+@media (max-width:665px) {
+    .h1text
+    {
+        font-size: 4.5rem;
+    }
+}
+@media (max-width:524px) {
+    .h1text
+    {
+        font-size: 3.5rem;
+    }
+}
+@media (max-width:419px) {
+    .h1text
+    {
+        font-size: 2.5rem;
+    }
+}

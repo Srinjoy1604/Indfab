@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './IntroPic.module.css';
-function IntroPic({ image, text }) {
+function IntroPic({ image, text,style }) {
     const divStyle = {
         backgroundImage: `url(${image})`,
         backgroundSize: 'cover',
@@ -10,12 +10,21 @@ function IntroPic({ image, text }) {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        textAlign: 'center'
+        textAlign: 'center',
+        backgroundRepeat: "no-repeat",
+        backgroundColor: "black",
+        ...style,
     };
+    const h1text={
+        
+        ...style
+    }
+    
+
 
     return (
         <div style={divStyle}>
-            <h1 className={`${styles.h1text}`}>{text}</h1>
+            <h1 className={`${styles.h1text}`} style={h1text}>{text}</h1>
         </div>
     );
 }

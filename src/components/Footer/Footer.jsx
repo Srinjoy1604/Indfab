@@ -18,7 +18,7 @@ function Footer() {
                         </ul>
                     </div>
                     <div className={`${styles.FooterItem}`}>
-                        <h2>PROJECT EXECUTED</h2>
+                        <h2>PROJECTS</h2>
                         <ul>
                             <li><Link to="/">HINDALCO GROUP</Link></li>
                             <li><Link to="/">TATA Steel</Link></li>
@@ -31,11 +31,11 @@ function Footer() {
                         </ul>
                     </div>
                     <div className={`${styles.FooterItem} ${styles.LastGroup}`}>
-                        <h2>GROUP COMPANIES</h2>
+                        <h2>COMPANY</h2>
                         <ul>
                             <li><Link to="/">INDFAB</Link></li>
-                            <li><Link to="/">PALIT EQUIPMENT SALES</Link></li>
-
+                            <li><Link to="/">NALCO WORKSHOP</Link></li>
+                            <li><Link to="/">MERAMANDALI WORKSHOP</Link></li>
                         </ul>
                     </div>
                 </div>

@@ -78,6 +78,7 @@
     width: 50px;
     height: 5px;
     background-color: white;
+    background-color: #252831;
     display: block;
     margin: 8px auto;
     -webkit-transition: all 0.3s ease-in-out;
@@ -179,7 +180,8 @@
     font-size: 1rem;
     font-family: "Tektur", sans-serif;
     /* background-color: black; */
-    background: rgba(0, 0, 0, 0.47);
+    background: rgba(255, 253, 253, 0.66);
+    
     /* border-radius: 16px; */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7.3px);
@@ -190,7 +192,6 @@
     position:absolute;
     width: 100vw;
     grid-template-columns: 150px 1fr;
-    
     /* top:0;
     position: sticky; */
     /* width: 100%; */
@@ -199,7 +200,7 @@
 .Logoimg {
     display: grid;
     place-items: center;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
 }
 
 .Logoimg img {
@@ -213,6 +214,8 @@
     grid-auto-flow: column;
     place-items: center;
     color: white;
+    color: black;
+    font-weight: 500;
     margin: 0;
     font-size: 1rem;
 
@@ -249,8 +252,8 @@ backdrop-filter: blur(8.3px);
 -webkit-backdrop-filter: blur(8.3px);
 border: 1px solid rgba(0, 0, 0, 0.46); */
     background-color: whitesmoke;
-    border-radius: 12px;
-
+    /* border-radius: 12px; */
+    
     /* grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr; */
 
@@ -308,7 +311,8 @@ border: 1px solid rgba(0, 0, 0, 0.46); */
 }
 
 .Dropdownshow div {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    border-bottom: 2px solid gold;
     display: grid;
     place-items: center;
     margin: 2%;

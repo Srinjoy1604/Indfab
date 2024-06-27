@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.MainEqpintro {
+    width: 100vw;
+    height: 100vh;
+    background: url("../images//Manufacturing_Unit/bg2.png") no-repeat center center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* max-height: 300vh; */
+    display: block;
+    box-sizing: border-box;
+    resize: both;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    text-align: center;
+    align-content: center;
+    font-size: 6rem;
+}
+
+.MachineCards {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    /* margin: 1%; */
+    gap: 20px;
+    background-color: #000000;
+}
+
+/* .MainEqpintroh11
+{
+    -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background: linear-gradient(135deg, #42d392, #647eff);
+} */
+.MainEqpintroh11 {
+    background: #121FCF;
+    background: linear-gradient(#121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+}
+
+.MainEqpintroh22 {
+    background: #000000;
+    background: linear-gradient(#0A12FF 0%, #0FFFB7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+
+}
+
+.ManuCapintro {
+    padding: 1%;
+    background-color: #000000;
+}
+
+.CapCard {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.CapCard1 {
+    border: 1px solid black;
+    padding: 2%;
+    /* background-color: rgba(255, 0, 0, 0.539); */
+    background-image: linear-gradient(to bottom, #ff0000, #f31817, #e62624, #d92f2e, #cb3736, #d14954, #d25b6e, #d16e86, #d994b4, #dfb9d7, #e9ddf0, #ffffff);
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+.CapCard2 {
+    border: 1px solid black;
+    padding: 2%;
+    height: 100%;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    font: 500;
+    color: white;
+    align-content: center;
+
+}
+
+.CapCard2 h1 {
+    background: #740AFF;
+    /* background: linear-gradient( #740AFF 0%, #C800CF 100%); */
+    background: linear-gradient(#00F7FF 0%, #C800CF 100%);
+    font-weight: 600;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+
+}
+
+.WorkshopSection {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    /* background: url("../images//Manufacturing_Unit//pexels-pixabay-159298 (1).jpg") ; */
+    /* background-size: 50%; */
+}
+
+.WorkshopSectionCard1 {
+    background: url("../images/Manufacturing_Unit/Rectangle48.png") center no-repeat;
+    width: 400px;
+    height: 400px;
+    background-size: contain;
+    position: relative;
+    margin: 2%;
+    transition: filter 0.3s ease, transform 0.3s ease;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: #000000;
+    position: relative;
+    z-index: 1;
+}
+
+.WorkshopSectionCard1 h2 {
+    position: absolute;
+    background-color: white;
+    color: rgb(0, 213, 255);
+    bottom: 0;
+    font-size: 1.5rem;
+    padding: 2%;
+    border: 1px solid black;
+    background-color: #000000;
+
+    /* left: 25%; */
+}
+
+.WorkshopSectionCard2 {
+    background: url("../images/Manufacturing_Unit/Rectangle49.png") center no-repeat;
+    width: 400px;
+    height: 400px;
+    background-size: contain;
+    position: relative;
+    margin: 2%;
+    border: 3px solid rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+}
+
+.WorkshopSectionCard2 h2 {
+    position: absolute;
+    background-color: white;
+    color: rgb(0, 213, 255);
+    bottom: 0;
+    font-size: 1.5rem;
+    padding: 2%;
+    border: 1px solid black;
+    /* left: 30%; */
+    align-self: center;
+    background-color: #000000;
+}
+
+.WorkshopSectionDiv {
+    background-color: #2e2e2e;
+    padding: 1%;
+    background: url("../images//Manufacturing_Unit//pexels-pixabay-159298 (1).jpg");
+    /* background-size: cover; */
+    background-blend-mode: darken;
+}
+
+.WorkshopSectionDiv h1 {
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+    box-shadow: -4px 10px 50px 40px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -4px 10px 50px 40px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -4px 10px 50px 40px rgba(0, 0, 0, 0.75);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 0, 0, 0.5);
+    /* Red with transparency */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlayText {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+}
+.overlayText img
+{
+    width: 50px;
+    height: 50px;
+}
+.overlayText h1
+{
+    font-size: 2rem;
+    background: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    padding: 1%;
+}
+@media (max-width:1290px) {
+    .MachineCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .MainEqpintroh22 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:817px) {
+    .MachineCards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:665px) {
+    .MainEqpintro {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width:524px) {
+    .MainEqpintro {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width:396px) {
+    .MainEqpintro {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:850px) {
+    .WorkshopSection {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media (max-width:442px) {
+    .WorkshopSectionCard1 {
+        width: 270px;
+        height: 270px;
+    }
+
+    .WorkshopSectionCard2 {
+        width: 270px;
+        height: 270px;
+    }
+
+}
