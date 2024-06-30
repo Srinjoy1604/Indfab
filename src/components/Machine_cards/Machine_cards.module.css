@@ -7,6 +7,7 @@
     /* margin: 0;
     padding: 0; */
     border-radius: 12px;
+    background-color: #272626;
    
 }
 .Imagediv img
@@ -24,9 +25,9 @@
     border: 2px solid silver;
     background-color: goldenrod;
     /* background-image: linear-gradient(to right bottom, #721313, #973160, #9365af, #639be9, #00ccff); */
-    background-image: linear-gradient(to left, #1eada9, #008ba5, #00689a, #004485, #0c1d61);
+    /* background-image: linear-gradient(to left, #1eada9, #008ba5, #00689a, #004485, #0c1d61);
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-    background-image: linear-gradient(to right top, #000000, #110f10, #1b191b, #242225, #2d2c30, #3f3e43, #515256, #65666a, #898a8d, #afafb1, #d6d6d8, #ffffff);
+    background-image: linear-gradient(to right top, #000000, #110f10, #1b191b, #242225, #2d2c30, #3f3e43, #515256, #65666a, #898a8d, #afafb1, #d6d6d8, #ffffff); */
     width: 400px;
     display: grid;
     place-items: center;
@@ -38,6 +39,9 @@
     gap: 1;
     margin: 5%;
     border-radius: 12px;
+    /* background-color: #cbd5e1; */
+    background-image: linear-gradient(to bottom, #1c28bc, #005ad8, #007ee1, #009ede, #00bad8, #00bcdd, #00bfe3, #00c1e8, #00a8fe, #0089ff, #0061ff, #3d00f8);
+    background-image: linear-gradient(to top, #000000, #201717, #382723, #50392c, #644e35);
   
 }
 .Namediv
@@ -57,12 +61,18 @@
 {
     padding: 2%;
     width: 100%;
+    /* overflow: auto; */
+    /* max-height: 85px; */
+    
+    
 }
 .AccordionBar
 {
     border: 1px solid black;
     width: 100%;
     border-radius: 12px;
+    position: relative;
+   
     
 }
 .AccordionTrigger
@@ -70,17 +80,26 @@
     border: 2px solid rgb(255, 255, 255);
     /* background-color: rgb(36, 52, 197); */
     /* background-color: rgb(30, 29, 29); */
-    background-image: linear-gradient(to right, #000000, #333333, #656565, #9c9c9c, #d6d6d6);
+    /* background-image: linear-gradient(to right, #000000, #333333, #656565, #9c9c9c, #d6d6d6);
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
     color: white;
     padding: 1%;
     border-radius: 12px 12px 0 0;
+    background-color: #202020;
 }
 .AccordionContent
 {
     background-color: rgb(72, 71, 71);
     display: grid;
     place-items: center;
-    
+
+}
+.AccordionContentDiv
+{
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+
 }
 .AccordionContent table
 {
