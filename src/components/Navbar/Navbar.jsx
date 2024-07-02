@@ -26,7 +26,7 @@ const menuData = [
             { name: "Indfab", link: "/indfab" },
             { name: "NALCONAGAR MSME", link: "/" },
             { name: "MERAMANDALI MSME", link: "/" },
-            { name: "Certifications", link: "/" },
+            { name: "Certifications", link: "/certificate" },
         ],
     },
     { name: "Contact us", link: "/contact-us", dropdown: false },

@@ -23,7 +23,9 @@
     grid-template-columns: repeat(3, 1fr);
     /* margin: 1%; */
     gap: 20px;
-    background-color: #000000;
+    /* background-color: #000000; */
+    background-image: url("../images//Manufacturing_Unit/RectLight4.svg");
+    background-attachment: fixed;
 }
 
 /* .MainEqpintroh11

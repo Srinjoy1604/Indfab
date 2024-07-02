@@ -52,7 +52,7 @@ function Manufacturing_Unit() {
             <IntroPic image={intro1} text={"Manufacturing Unit"} style={introPicStyle} />
             <div className={`${styles.MainEqpintro}`}>
                 <h1>MAIN</h1>
-                <h1>EQUIPMENTS</h1>
+                <h1>MACHINES</h1>
             </div>
             <div className={`${styles.MachineCards}`}>
                 <MachineCard image={m1} name={"ESAB CNC  Oxy-Fuel Cutting Machine (CM - 01)"} specs={[{ title: "Make", desc: "ESAB" }, { title: "Machine Width", desc: "4625mm" }, { title: "Speed Range", desc: "3000mm/min" }, { title: "Cutting Width", desc: "2700mm" }, { title: "Cutting Length", desc: "13000mm" }]} />

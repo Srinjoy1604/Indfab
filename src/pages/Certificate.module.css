@@ -1,0 +1,60 @@
+.Introimg
+{
+    background-image: url("../images//Certificates/WaveLine3.svg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+}
+.Introimg h1
+{
+    color: rgb(42, 41, 41);
+    font-size: 6rem;
+    width: 100%;
+    
+}
+.PDFblock
+{
+    display: grid;
+    place-items: center;
+    margin: 1%;
+    
+}
+.ButtonsDiv
+{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 2%;
+    justify-content: center;
+    align-content: center;
+}
+.Buttons
+{
+    width: fit-content;
+    
+}
+.Instructions
+{
+    padding: 2%;
+}
+.Instructions h2
+{
+    font-size: 2rem;
+    color: rgb(41, 41, 88);
+}
+@media (max-width:643px) {
+    .Introimg h1
+    {
+        font-size: 3.5rem;
+    }
+}
+@media (max-width:383px) {
+    .Introimg h1
+    {
+        font-size: 2rem;
+    }
+}

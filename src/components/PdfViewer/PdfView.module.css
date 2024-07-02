@@ -1,0 +1,37 @@
+.pdfViewer {
+    text-align: center;
+    max-width: 100%;
+    margin: 2% auto;
+    border: 2px solid black;
+}
+
+.document {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.navigationButtons {
+    margin-top: 10px;
+}
+
+.navigationButtons button {
+    margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+    .pdfViewer {
+        width: 100%;
+    }
+
+    .navigationButtons button {
+        width: 45%;
+        margin-bottom: 5px;
+    }
+}
+
+/* @media (max-width: 398px) {
+    .pdfViewer {
+        width: 50%;
+    }
+
+} */

@@ -1,29 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-.Imagediv
-{
+
+.Imagediv {
     width: 100%;
-    height: 400px;
+    height: 300px;
     padding: 2%;
     /* margin: 0;
     padding: 0; */
     border-radius: 12px;
-    background-color: #272626;
-   
+    /* background-color: rgb(213, 242, 247); */
+
+
 }
-.Imagediv img
-{
+
+.Imagediv img {
     width: 100%;
     height: 100%;
-    object-fit:contain;
+    object-fit: contain;
     /* padding: 0;
     margin: 0; */
     filter: brightness(121%) contrast(108%);
-   
+
+
 }
-.Carddiv
-{
+
+.Carddiv {
     border: 2px solid silver;
-    background-color: goldenrod;
+    /* background-color: goldenrod; */
     /* background-image: linear-gradient(to right bottom, #721313, #973160, #9365af, #639be9, #00ccff); */
     /* background-image: linear-gradient(to left, #1eada9, #008ba5, #00689a, #004485, #0c1d61);
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
@@ -33,50 +35,58 @@
     place-items: center;
     margin: 1%;
     padding-top: 0;
-    height: max-content;
+    /* height: max-content; */
     font-family: "Poppins", sans-serif;
-    height: 100%;
+    height: 97%;
     gap: 1;
     margin: 5%;
     border-radius: 12px;
     /* background-color: #cbd5e1; */
-    background-image: linear-gradient(to bottom, #1c28bc, #005ad8, #007ee1, #009ede, #00bad8, #00bcdd, #00bfe3, #00c1e8, #00a8fe, #0089ff, #0061ff, #3d00f8);
-    background-image: linear-gradient(to top, #000000, #201717, #382723, #50392c, #644e35);
-  
+    /* background-image: linear-gradient(to bottom, #1c28bc, #005ad8, #007ee1, #009ede, #00bad8, #00bcdd, #00bfe3, #00c1e8, #00a8fe, #0089ff, #0061ff, #3d00f8);
+    background-image: linear-gradient(to top, #000000, #201717, #382723, #50392c, #644e35); */
+    background: rgba(255, 255, 255, 0.59);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+
 }
-.Namediv
-{
+
+.Namediv {
     font-weight: 600;
     /* background-color: rgb(191, 240, 191); */
     color: white;
     font-family: "Poppins", sans-serif;
+    color: #272626;
 }
-.Makediv
-{
+
+.Makediv {
     background-color: #122e9e;
     color: white;
     padding: 2%;
 }
-.Accordiondiv
-{
+
+.Accordiondiv {
     padding: 2%;
     width: 100%;
     /* overflow: auto; */
     /* max-height: 85px; */
-    
-    
+
+
 }
-.AccordionBar
-{
+
+.AccordionBar {
     border: 1px solid black;
     width: 100%;
     border-radius: 12px;
     position: relative;
-   
-    
+
+
 }
-.AccordionTrigger
-{
+
+.AccordionTrigger {
     border: 2px solid rgb(255, 255, 255);
     /* background-color: rgb(36, 52, 197); */
     /* background-color: rgb(30, 29, 29); */
@@ -87,47 +97,48 @@
     border-radius: 12px 12px 0 0;
     background-color: #202020;
 }
-.AccordionContent
-{
+
+.AccordionContent {
     background-color: rgb(72, 71, 71);
     display: grid;
     place-items: center;
 
 }
-.AccordionContentDiv
-{
+
+.AccordionContentDiv {
     z-index: 2;
     position: absolute;
     width: 100%;
 
 }
-.AccordionContent table
-{
-    background-color: rgb(233, 180, 180);
-    background-image: linear-gradient(to right, #fffbd5, #b20a2c);
+
+.AccordionContent table {
+    /* background-color: rgb(233, 180, 180);
+    background-image: linear-gradient(to right, #fffbd5, #b20a2c); */
+    background-image: linear-gradient(to right, #dfeff2, #bde9f3, #98e3f6, #6bdbfa, #02d4ff);
     width: 90%;
     text-align: center;
     margin: 1%;
     border: 2px solid black;
 }
-.AccordionContent table tr
-{
+
+.AccordionContent table tr {
     border: 1px solid black;
 }
-.AccordionContent table td
-{
+
+.AccordionContent table td {
     border: 1px solid black;
     font-weight: 500;
 }
-.AccordionContent table th
-{
+
+.AccordionContent table th {
     border: 1px solid black;
     background-color: rgb(209, 166, 67);
 
 }
+
 @media (max-width:443px) {
-    .Carddiv
-    {
+    .Carddiv {
         width: 90%;
     }
 }
