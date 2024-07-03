@@ -205,7 +205,7 @@
 
 .Logoimg img {
     width: 140px;
-    height: min-content;
+    height: auto;
 
 }
 
