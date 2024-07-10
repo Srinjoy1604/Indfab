@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.IntroPic {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images//Quality_&_Safety/top-view-steel-hammer-with-other-construction-elements-tools_23-2150576411.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: end;
+    align-content: center;
+
+
+}
+
+.TrapeziumDiv {
+    width: 60%;
+    display: grid;
+    place-items: end;
+}
+
+.Trapezium {
+    height: 70vh;
+    width: 100%;
+    background-image: url("../images//Quality_&_Safety/Trapezium2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+}
+
+.Trapezium div {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    text-align: center;
+}
+
+.Trapezium div h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+}
+
+.Trapezium div h1:nth-child(1) {
+    color: red;
+}
+
+.Trapezium div h1:nth-child(2) {
+    color: rgb(6, 4, 76);
+}
+
+.Trapezium div h1:nth-child(3) {
+    color: rgb(236, 141, 7);
+}
+
+.SafetyHealth {
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url("../images//Quality_&_Safety/pexels-pixabay-73833 1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.SafetyHealthdiv {
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(253, 139, 50, 0.7) 25.3%, rgba(0, 30, 96, 0.7) 89.87%, rgba(151, 83, 30, 0.7) 131.24%);
+
+}
+
+.SafetyHealthdiv ul {
+    list-style-image: url("../images/Quality_&_Safety/liststyle.png");
+    margin-left: 2.5rem;
+    padding: 2%;
+
+}
+
+.SafetyHealthdiv ul li {
+    margin-bottom: 3%;
+    padding-right: 2%;
+    color: #FAFEC3;
+
+}
+
+.SafetyHealthTitle {
+    color: white;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+    padding: 2%;
+    background: rgba(11, 11, 11, 0.57);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(11, 11, 11, 0.3);
+}
+
+.QualityManagement {
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url("../images//Quality_&_Safety/QUALITYBackground.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 3%;
+    height: auto;
+}
+
+.OrangeBox {
+    background-color: #E95A31;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 50% 85%, 0 85%);
+}
+
+.OrangeBoxHeading {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    gap: 1%;
+    font-family: "Pacifico", cursive;
+    color: #001E60;
+    width: 100%;
+    /* height: 100%; */
+
+}
+
+.OrangeBoxHeading {
+    font-size: 3rem;
+}
+
+.OrangeBoxHeading img {
+    width: 70px;
+    height: auto;
+}
+
+.OrangeBoxImage {
+    padding: 2%;
+}
+
+.NonHangingCard {
+    height: 100%;
+    /* display: grid; */
+
+
+}
+
+.HangingCard {
+    transform: translateY(-8%);
+    width: 100%;
+    height: 120%;
+    display: grid;
+    place-items: center;
+}
+
+.CardSection {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2%;
+    gap: 2%;
+}
+
+@media (max-width:1004px) {
+    .CardSection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:567px) {
+    .SafetyHealth {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .OrangeBoxHeading img {
+        width: 40px;
+        height: auto;
+    }
+}
+
+@media (max-width:694px) {
+
+    .TrapeziumDiv {
+        width: 100%;
+    }
+
+    .Trapezium {
+        height: 100vh;
+        width: 100%;
+        background: rgba(46, 46, 46, 0.71);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(46, 46, 46, 0.3);
+        display: grid;
+        place-items: center;
+
+    }
+
+    .Trapezium div {
+        position: relative;
+        text-align: center;
+        top: initial;
+        left: initial;
+
+    }
+
+    .CardSection {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0%;
+        /* display: flex;
+        justify-content: space-between;
+        flex-direction: column; */
+
+    }
+
+    .HangingCard {
+        transform: none;
+        height: 100%;
+    }
+
+    .OrangeBoxHeading h1 {
+        font-size: 2rem;
+
+    }
+
+    .OrangeBox {
+        clip-path: none;
+    }
+
+    .NonHangingCard {
+        height: auto;
+
+
+    }
+}
+@media (max-width:325px) {
+    .OrangeBox {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .SafetyHealthTitle {
+        font-size: 1.5rem;
+    }
+}

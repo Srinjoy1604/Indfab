@@ -1,0 +1,44 @@
+.CardMain {
+    /* border: 1px solid black; */
+    width: 250px;
+    /* height: 100%; */
+    height: 350px;
+    padding: 0.1%;
+    padding-top: 1%;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(to bottom, #292de2, #3233c1, #3836a1, #3b3780, #3b3760, #36334e, #302e3c, #2a2a2a, #212121, #191919, #0f0f0f, #000000);
+    color: white;
+    margin: 1%;
+}
+
+.CardImage {
+    padding: 0;
+    width: 100%;
+}
+
+.CardImage img {
+    width: 100%;
+}
+
+.CardDesc {
+    width: 100%;
+    padding: 2%;
+}
+
+.CardDesc p {
+    width: 100%;
+    word-break: break-all;
+    word-wrap: break-word;
+    padding: 2%;
+    border: 1px solid silver;
+    border-radius: 16px;
+    text-align: center;
+}
+
+@media (max-width:254px) {
+    .CardMain {
+      
+        width: 200px;
+    }
+}

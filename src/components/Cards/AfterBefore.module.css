@@ -1,0 +1,88 @@
+.CardMain {
+    background-color: black;
+    color: white;
+    display: grid;
+    width: fit-content;
+    padding: 2% 0%;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1%;
+    width: 95%;
+}
+
+/* .CardMain div
+{
+    width: fit-content;
+} */
+.CardMain h1 {
+    font-size: 2rem;
+
+    text-align: center;
+
+}
+
+.CardStatusDiv {
+    position: relative;
+}
+
+.CardStatus {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #001E60B2;
+    color: white;
+    padding: 2%;
+    font-size: 1.5rem;
+    font-family: Oxanium;
+    text-align: center;
+    width: 100px;
+
+}
+
+.CardStatusDiv2 {
+    position: relative;
+}
+
+.CardStatus2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #F37400CC;
+    color: white;
+    padding: 2%;
+    font-size: 1.5rem;
+    font-family: Oxanium;
+    text-align: center;
+    width: 100px;
+
+}
+
+@media (max-width:514px) {
+    .CardMain h1 {
+        font-size: 1.2rem;
+
+        text-align: center;
+
+    }
+    .CardStatus
+    {
+        width: fit-content;
+        font-size: 1rem;
+    }
+    .CardStatus2
+    {
+        width: fit-content;
+        font-size: 1rem;
+    }
+}
+@media (max-width:254px) {
+    .CardMain {
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        padding: 3%;
+    
+    }
+    
+
+}

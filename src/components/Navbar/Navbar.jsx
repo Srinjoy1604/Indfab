@@ -6,14 +6,13 @@ import Dropdown from "./Dropdown"; // Import the Dropdown component
 
 const menuData = [
     { name: "Home", link: "/", dropdown: false },
-    { name: "Products & Services", link: "/products-services", dropdown: false },
+    { name: "Products & Services", link: "/productsservices", dropdown: false },
     {
-        name:"Manufacturing Unit",
-        dropdown:true,
-        items:[
+        name: "Manufacturing Unit",
+        dropdown: true,
+        items: [
             { name: "Our Manufacturing unit", link: "/manufacturing_unit" },
-            { name: "Quality and Safety", link: "/" },
-
+            { name: "Quality and Safety", link: "/QualitySafety" },
         ],
     },
     { name: "Clients", link: "/clients", dropdown: false },
@@ -65,6 +64,7 @@ function Navbar() {
                             name={menuItem.name}
                             items={menuItem.items}
                             dropdown={menuItem.dropdown}
+                            link={menuItem.link}  // Pass the link property here
                         />
                     ))}
                 </ul>
@@ -77,7 +77,8 @@ function Navbar() {
                             name={menuItem.name}
                             items={menuItem.items}
                             dropdown={menuItem.dropdown}
-                            isSidebar={true} 
+                            isSidebar={true}
+                            link={menuItem.link}  
                         />
                     ))}
                 </ul>
@@ -87,3 +88,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
