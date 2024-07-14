@@ -66,7 +66,7 @@
     width: 100%;
     padding: 2%;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: Oxanium;
     font-weight: 600;
 }
@@ -99,7 +99,8 @@
 .ProcessofWork1 h1
 {
     background-color: #F6B43E;
-    background-image: linear-gradient(to right, #ff7900, #ff8e00, #ffa300, #ffb700, #ffcb00);
+    /* background-image: linear-gradient(to right, #ff77009d, #ff8c00ac, #ffa2009b, #ffb700b1, #ffcc00a7); */
+    background-color: rgba(255, 166, 0, 0.525);
     height: 80%;
     width: 100%;
     text-align: center;
@@ -125,7 +126,8 @@
 .ProcessofWork2 h1
 {
     background-color: #F6B43E;
-    background-image: linear-gradient(to right, #f1ff00, #f4e100, #f1c400, #e9a805, #dd8d18);
+    /* background-image: linear-gradient(to right, #f1ff00, #f4e100, #f1c400, #e9a805, #dd8d18); */
+    background-color: #f6b33e94;
     height: 80%;
     width: 100%;
     text-align: center;

@@ -16,6 +16,7 @@ import crdimg5 from "../images/Home/safty(edited).png";
 import crdimg4 from "../images/Home/5426807.png";
 import locimg from "../images/Home/address.png";
 import Footer from "@/components/Footer/Footer";
+import Carousel from "@/components/Intro/Carousel";
 function Home() {
     const colorframer = {
         variantA: { backgroundImage: "linear-gradient(to right top, #ff0000, #ff4237, #ff645c, #f9817e, #ed9c9c)", color: "black" },
@@ -26,7 +27,8 @@ function Home() {
             <CredentialBar />
             <Navbar />
             <div className={`${styles.IntroDiv}`}>
-                <Intro />
+                
+                <Carousel />
 
             </div>
             {/*<div className={`${styles.CardBlock}`}>

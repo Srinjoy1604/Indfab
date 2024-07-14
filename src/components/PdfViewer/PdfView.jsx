@@ -12,7 +12,9 @@ const PdfViewer = ({ pdfFile }) => {
     const [pageNumber, setPageNumber] = useState(1);
 
     const onDocumentLoadSuccess = ({ numPages }) => {
+        setPageNumber(1);
         setNumPages(numPages);
+        
     };
 
     const goToPrevPage = () => {

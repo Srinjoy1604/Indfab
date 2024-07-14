@@ -26,9 +26,20 @@ body {
 }
 
 .IntroDiv {
-    position: relative;
+
+
     background-color: rgb(0, 0, 0);
     margin-bottom: 0;
+    position: relative;
+    /* height: 100%; */
+    min-height: 100vh; /* Full viewport height */
+    display: grid; /* Ensure the children are flex items */
+    place-items: center;
+    padding: 2%;
+    padding-left: 0;
+    padding-right: 0;
+    /* max-height: 1200px; */
+    background-image: linear-gradient(to bottom, #000000, #1a1a1a, #2d2d2d, #414142, #565758, #565758, #565758, #565758, #414142, #2d2d2d, #1a1a1a, #000000);
 }
 
 .RedBlock {
@@ -147,10 +158,11 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border: 1px solid black;
-    margin: 1%;
+    /* margin: 1%; */
     place-items: center;
-    border-radius: 16px;
+    /* border-radius: 16px; */
     background-color: wheat;
+    background-image: linear-gradient(to left, #ffffff, #fdf0fc, #ffdfea, #ffd0c9, #ffc7a2, #feca96, #f9cf8a, #efd580, #f2de90, #f6e7a1, #faf0b1, #fff9c2);
 }
 
 .Isolink {

@@ -29,7 +29,7 @@ function Certificate() {
             </div>
             <div className={`${styles.Instructions}`}>
                 <h2>Available certificates</h2>
-                <p>These are the available certificates.Click the button to view the repective certificate.</p>
+                <p>These are the available certificates.Click the button to view the respective certificate.</p>
             </div>
             <div className={`${styles.ButtonsDiv}`}>
 

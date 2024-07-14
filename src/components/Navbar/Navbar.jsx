@@ -16,19 +16,19 @@ const menuData = [
         ],
     },
     { name: "Clients", link: "/clients", dropdown: false },
-    { name: "Project", link: "/project", dropdown: false },
+    
     {
         name: "Company",
         dropdown: true,
         items: [
             { name: "About us", link: "/aboutus" },
-            { name: "Indfab", link: "/indfab" },
-            { name: "NALCONAGAR MSME", link: "/" },
-            { name: "MERAMANDALI MSME", link: "/" },
+            { name: "Nalconagar MSME", link: "/MSME1" },
+            { name: "Meramandali MSME", link: "/MSME2" },
             { name: "Certifications", link: "/certificate" },
         ],
     },
-    { name: "Contact us", link: "/contact-us", dropdown: false },
+    { name: "Project", link: "/project", dropdown: false },
+    
 ];
 
 function Navbar() {

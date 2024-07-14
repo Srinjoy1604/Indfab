@@ -1,0 +1,52 @@
+.IntroDiv
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/Clients/pexels-nadezhda-moryak-6063623.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.IntroDiv h1
+{
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: 5rem;
+    
+}
+.CompanyMain
+{
+    width: 100vw;
+    height: 100%;
+    background-image: linear-gradient(to right bottom, #121cff, #2429f8, #3033f1, #3a3cea, #4343e3, #5644e0, #6445dc, #7046d9, #8640d8, #9938d5, #ac2dd2, #bd1dcd);
+    background-image: linear-gradient(to right bottom, #1900ff, #0040ff, #005eff, #3077fe, #578df6, #698dee, #768ee5, #818fdd, #837bd2, #8865c4, #8f4db2, #952e9c);
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4,1fr);
+    padding: 2%;
+}
+@media (max-width:620px) {
+    .CompanyMain
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width:407px) {
+    .CompanyMain
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:285px) {
+    .CompanyMain
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .IntroDiv h1
+    {
+        font-size: 3rem;
+    }
+}

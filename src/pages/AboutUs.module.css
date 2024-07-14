@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .Abtsintro {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -26,16 +29,147 @@
     grid-column: 2/3;
     grid-row: 1/2;
 }
-.Abtsintro ul li
-{
+
+.Abtsintro ul li {
     /* list-style: disc; */
     padding: 2%;
     margin: 1%;
     font-family: "Poppins", sans-serif;
+
+}
+
+.DirectorsDesk {
+    /* background-image: linear-gradient(to left, #ffffff, #fafafb, #f4f4f7, #eeeff4, #e8eaf0, #dadce2, #cbced5, #bdc0c7, #a4a7ad, #8c8f93, #75777a, #5f6062); */
+    background-image: linear-gradient(to right top, #0d078f, #000e77, #000f5e, #000d46, #07052e);
+    background-size: cover;
+    background-image: linear-gradient(to top, #2800ff, #1f10ec, #1917da, #161cc7, #151eb5, #0d20a1, #0b218d, #0e2079, #111e5f, #141b44, #15162b, #111112);
+}
+
+.DirectorsDesk h1 {
+    width: 100%;
+    text-align: start;
+    font-size: 3rem;
+    padding: 2%;
+    background: radial-gradient(circle farthest-corner at center center, #F2804C 0%, #F6B43E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.DirectorWords {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.DirectorImage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* background-color: black; */
+    width: 100%;
+    height: 100%;
+}
+
+/* .DirectorImage img
+{
+    border: 5px solid rgb(255, 255, 255);
+} */
+/* .DirectorImage h2
+{
+    color: rgb(234, 194, 93);
+} */
+.DirectorName h2 {
+    font-size: 1.5rem;
+    color: #F6B43E;
+
+}
+
+.Quote {
+    padding: 2%;
+    /* background-color: whitesmoke; */
+    border-radius: 16px;
+    background: rgba(32, 32, 32, 0.54);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+    border: 1px solid rgba(32, 32, 32, 0.3);
+    /* position: relative; */
+    /* position: relative; */
     
 }
-.CardSection
+.Quote img
 {
+    position: absolute;
+    /* rotate: 180deg; */
+    transform: rotateX(180deg);
+    z-index: -1;
+    height: 20px;
+    width: auto;
+    top: 0;
+    left: 0;
+}
+.QuoteDiv
+{
+    
+    padding: 2%;
+}
+.Quote p {
+    color: rgb(255, 166, 0);
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 1.2rem;
+    z-index: 2;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.Quote div {
+    color: red;
+    width: 100%;
+    text-align: end;
+    font-size: 2rem;
+    font-family: "Dancing Script", cursive;
+}
+
+.DirectorDesig h2 {
+    font-size: 1.1rem;
+    color: #10abc0;
+}
+
+.DirectorImage img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    padding: 2%;
+}
+
+.DirectorWordsPara {
+
+    /* background-color: wheat; */
+    padding: 2%;
+    margin: 2%;
+    color: white;
+    /* background-image: linear-gradient(to right top, #0d078f, #251ba6, #372cbe, #473dd7, #564ef0);
+    outline: none;
+    border: none; */
+    font-family: "Poppins", sans-serif;
+    border-left: 3px solid rgb(235, 170, 20);
+    /* border-bottom: 3px solid rgb(235, 170, 20); */
+}
+
+
+.DirectorWordsPara p {
+    padding: 2%;
+    text-align: center;
+    margin: 1%;
+    font-size: 1.7rem;
+}
+
+.CardSection {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     place-items: center;
@@ -43,14 +177,14 @@
     padding-top: 0;
     z-index: 0;
 }
-.KeyArea
-{
+
+.KeyArea {
     background-image: url("../images/ABOUTUS/blob-scene-haikei5.png");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
-.KeyArea h1
-{
+
+.KeyArea h1 {
     color: rgb(181, 175, 175);
     width: 100%;
     text-align: center;
@@ -58,56 +192,57 @@
     padding: 2%;
     font-family: "Poppins", sans-serif;
 }
-.AccordionDiv
-{
+
+.AccordionDiv {
     padding: 2%;
     background-color: rgb(186, 181, 181);
 }
-.AccordionBar
-{
+
+.AccordionBar {
     background-color: #ed1c24;
     color: whitesmoke;
 }
-.AccordionTrigger
-{
+
+.AccordionTrigger {
     padding: 2%;
     border: 1px solid black;
 }
-.AccordionItem
-{
+
+.AccordionItem {
     border: 1px solid black;
 }
-.ImageSlider1
-{
+
+.ImageSlider1 {
     padding: 5%;
 }
-.AccordionContent
-{
+
+.AccordionContent {
     background-color: rgb(26, 25, 25);
 }
-.AccordionDiv h1
-{
+
+.AccordionDiv h1 {
     width: 100%;
     text-align: center;
     font-size: 1.5rem;
     padding: 1%;
 }
-.AccordionDiv p
-{
+
+.AccordionDiv p {
     text-align: center;
     padding: 4%;
 
 }
+
 /* .Accordionpara1
 {
     background: url("../images/ABOUTUS/SILVER LOGO Transparent.png") no-repeat center center;
     background-size: contain;
     backface-visibility: 50%;
 } */
- .Accordionpara1
- {
+.Accordionpara1 {
     position: relative;
- }
+}
+
 .Accordionpara1::before {
     content: '';
     position: absolute;
@@ -117,53 +252,72 @@
     bottom: 0;
     background: url("../images/ABOUTUS/SILVER LOGO Transparent.png") no-repeat center center;
     background-size: contain;
-    opacity: 0.2; /* Adjust opacity as needed */
-   
+    opacity: 0.2;
+    /* Adjust opacity as needed */
+
 }
-.AccordionContentHSE
-{
+
+.AccordionContentHSE {
     background: url("../images/ABOUTUS/Rectangle  HSE POLICY.png") no-repeat;
     background-size: cover;
     background-color: white;
     color: black;
 }
-.AccordionContentHSE h1
-{
+
+.AccordionContentHSE h1 {
     padding: 2%;
     font-weight: 700;
 }
-@media (max-width:667px)
-{
-    .Abtsintro{
+
+@media (max-width:667px) {
+    .Abtsintro {
         grid-template-rows: 1fr 0.2fr 1fr;
     }
+
     .Abtsintro img {
         grid-column: 1/3;
         grid-row: 1/2;
     }
-    .Abtsintro h2{
+
+    .Abtsintro h2 {
         grid-column: 1/3;
         grid-row: 2/3;
         width: 100%;
         height: fit-content;
     }
-    .Abtsintro ul
-    {
+
+    .Abtsintro ul {
         grid-column: 1/3;
         grid-row: 3/4;
     }
 
 }
+
 @media (max-width:1162px) {
-    .CardSection
-    {
-        grid-template-columns: repeat(2,1fr);
+    .CardSection {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width:780px) {
-    .CardSection
-    {
-        grid-template-columns: repeat(1,1fr);
+    .CardSection {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:432px)
+{
+    .DirectorWords {
+      
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width:231px) {
+    .DirectorsDesk h1 {
+        font-size: 2rem;
+    }
+    .DirectorImage img {
+        width: 200px;
+        height: 200px;
     }
 }

@@ -9,6 +9,7 @@ import Manufacturing_Unit from './pages/ManufacturingUnit';
 import Certificate from './pages/Certificate';
 import QualitySafety from './pages/Q&S';
 import ProductsServices from './pages/Products&Services';
+import Clients from './pages/Clients';
 function App() {
 
 
@@ -22,6 +23,7 @@ function App() {
           <Route path='/certificate' Component={Certificate}></Route>
           <Route path='/QualitySafety' Component={QualitySafety}></Route>
           <Route path='/productsservices' Component={ProductsServices}></Route>
+          <Route path='/clients' Component={Clients}></Route>
         </Routes>
       </div>
     </Router>

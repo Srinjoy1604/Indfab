@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import IntroPic from "@/components/IntroPic/IntroPic";
 import img1 from "../images/ABOUTUS/EDITED-ABOUT US.png"
-import img2 from "../images/ABOUTUS//blob.jpeg";
+import img2 from "../images/ABOUTUS/Grouppic.png";
 import CustomCard3 from "@/components/Cards/CustomCard3";
 import img3 from "../images/ABOUTUS/system-regular-22-build 1.png";
 import img4 from "../images/ABOUTUS/system-regular-40-add-card 1.png";
@@ -33,6 +33,8 @@ import AB15 from "../images/ABOUTUS/Golden Jubilee/AB15.jpg";
 import AB16 from "../images/ABOUTUS/Golden Jubilee/AB16.jpg";
 import AB17 from "../images/ABOUTUS/Golden Jubilee/AB17.jpg";
 import AB18 from "../images/ABOUTUS/Golden Jubilee/AB18.jpg";
+import Director from "../images/ABOUTUS/Director.png";
+import Quotation from "../images/ABOUTUS/QUOTETIONMARK.png";
 import {
     Accordion,
     AccordionContent,
@@ -46,6 +48,29 @@ function AboutUs() {
             <CredentialBar />
             <Navbar />
             <IntroPic image={img1} text={"About Us"} />
+            <div className={`${styles.DirectorsDesk}`}>
+                <h1>From the Director's Desk</h1>
+                <div className={`${styles.DirectorWords}`}>
+                    <div className={`${styles.DirectorImage}`}>
+                        <div><img src={Director}></img></div>
+                        <div className={`${styles.DirectorName}`}><h2>Mr. Kalyan Palit</h2></div>
+                        <div className={`${styles.DirectorDesig}`}><h2>Director, INDFAB</h2></div>
+                    </div>
+                    <div className={`${styles.DirectorWordsPara}`}><p>The key to the successful journey is not any of the individual elements.What is important is having all the elements together in
+                            a system and must be practiced everyday in a very consistent manner.
+                    </p></div>
+                </div>
+                <div className={`${styles.QuoteDiv}`}>
+                    <div className={`${styles.Quote}`}>
+                        <p><img src={Quotation}></img>The years ahead will be the best for those who learn To balance dreams and discipline.The future
+                            Will belong to those who embrace the potential of wider opportunities but recognise the realities
+                             of more constraint resources and find new solutions that permit doing more with less.</p>
+                             <div>-Rosabeth Moss Kanter</div>
+                    
+                    </div>
+                </div>
+                
+            </div>
             <div className={`${styles.Abtsintro}`}>
                 <img src={img2}></img>
                 <h2>"INDFAB: Journey from Small Scale Industry to Reputable Engineering Firm"</h2>

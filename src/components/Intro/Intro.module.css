@@ -3,21 +3,12 @@
     display: grid;
     place-items: center;
     width: 100vw;
+    height: max-content;
     margin: 1% 0;
-    padding: 2%;
+    /* padding: 2%; */
     padding-bottom: 0;
     margin-bottom: 0;
+    position: relative;   
 }
 
-.carouselmain
-{
-    width: 85vw;
-    height: auto;
-    display: grid;
-    place-items: center;
-    margin: 2%;
-}
-.carouselmain img
-{
-    width: 100%;
-}
+

@@ -9,8 +9,10 @@ body
 {
   width: 100%;
 }
-
-
+.hiddenCanvasElement
+{
+    display: none;
+}
 
 
 
