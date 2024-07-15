@@ -10,6 +10,7 @@ import Certificate from './pages/Certificate';
 import QualitySafety from './pages/Q&S';
 import ProductsServices from './pages/Products&Services';
 import Clients from './pages/Clients';
+import ScrollToTop from './components/ScrollToTop';
 function App() {
 
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='/clients' Component={Clients}></Route>
         </Routes>
       </div>
+      <ScrollToTop />
     </Router>
   )
 }
