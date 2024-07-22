@@ -22,13 +22,13 @@ function MachineCard({ image, name, specs }) {
     return (
 
         <div className={`${styles.Carddiv}`}>
-            <dialog ref={dialogRef} className='backdrop:bg-black/85 overflow-visible'>
+            <dialog ref={dialogRef} className={`backdrop:bg-black/85 overflow-visible ${styles.dialogBox}`}>
                 {activeImage &&
 
                     (<div className='relative overflow-visible'>
                         <div style={{
                             aspectRatio: `${activeImage.width}/${activeImage.height}`
-                        }}>
+                        }} className={`${styles.dialogImgdiv}`}>
                             <img src={activeImage}></img>
                         </div>
                         <div className='absolute -top-2 -right-2 '>

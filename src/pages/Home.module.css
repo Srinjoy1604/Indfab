@@ -275,7 +275,8 @@ body {
     padding: 2%;
     border-radius: 12px;
     margin: 0.5%;
-    /* background-color: #242424; */
+    background-color: rgb(236, 250, 252);
+    
 }
 
 .EachMap h1 {

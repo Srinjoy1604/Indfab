@@ -419,22 +419,17 @@ function Manufacturing_Unit() {
                 </div>
                 <div className={`${styles.CapCard}`}>
                     <div className={`${styles.CapCard1}`}>
-                        <p>General Structural Job (Medium To Heavy) 500 MT</p>
+                        <p>General Structural Job (Medium To Heavy) :500 MT</p>
                         <p>Equipment &Technological Structural Work :100 MT</p>
                         <p>Refurbishing Work : As per the requirements.</p>
                     </div>
-                    <div className={`${styles.CapCard2}`}>
-                        <h1>Spare Capacity Available for TATA Steel</h1>
-                        <p>General Structural Job (Medium To Heavy) :150-200 MT</p>
-                        <p>Equipment &Technological Structural Work :25-30 MT</p>
-                        <p>Refurbishing Work : As per the requirements</p>
-                    </div>
+                   
                 </div>
             </div>
             <div className={`${styles.WorkshopSectionDiv}`}>
                 <h1>Our Workshops</h1>
                 <div className={`${styles.WorkshopSection}`}>
-                    <Link to="/">
+                    <Link to="/MSME2">
                         <motion.div className={`${styles.WorkshopSectionCard1}`}
                             whileTap={{ scale: 0.9 }}>
                             <div><h2>Nalconagar</h2></div>
@@ -452,7 +447,7 @@ function Manufacturing_Unit() {
                         </motion.div>
 
                     </Link>
-                    <Link to="/">
+                    <Link to="/MSME1">
 
                         <motion.div className={`${styles.WorkshopSectionCard2}`}
 

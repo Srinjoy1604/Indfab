@@ -10,6 +10,9 @@ import Certificate from './pages/Certificate';
 import QualitySafety from './pages/Q&S';
 import ProductsServices from './pages/Products&Services';
 import Clients from './pages/Clients';
+import Contact from './pages/ContactUs';
+import Meramandali from './pages/Meramandali';
+import Nalconagar from './pages/Nalconagar';
 import ScrollToTop from './components/ScrollToTop';
 function App() {
 
@@ -25,6 +28,9 @@ function App() {
           <Route path='/QualitySafety' Component={QualitySafety}></Route>
           <Route path='/productsservices' Component={ProductsServices}></Route>
           <Route path='/clients' Component={Clients}></Route>
+          <Route path='/contact' Component={Contact}></Route>
+          <Route path='/MSME1' Component={Meramandali}></Route>
+          <Route path='/MSME2' Component={Nalconagar}></Route>
         </Routes>
       </div>
       <ScrollToTop />

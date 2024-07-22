@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .IntroPic {
     width: 100vw;
     height: 100vh;
@@ -13,7 +13,32 @@
 
 
 }
+.IntroPic h1
+{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    font-size: 4rem;
+    background-color: #6968685d;
+    font-family: Oxanium;
+    font-weight: 600;
+}
+.title1 {
+  color: gainsboro;
+  -webkit-text-stroke: 1px navy;
 
+}
+.title2 {
+  color: rgb(0,23,85);
+  -webkit-text-stroke: 1px navy;
+
+}
+.title3 {
+    color: rgb(203, 18, 18);
+    -webkit-text-stroke: 1px navy;
+  
+  }
 .TrapeziumDiv {
     width: 60%;
     display: grid;
@@ -106,6 +131,8 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(11, 11, 11, 0.3);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
 
 .QualityManagement {
@@ -174,7 +201,46 @@
     padding: 2%;
     gap: 2%;
 }
+.DescCardDiv {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3,1fr);
+}
+.OnsiteDiv {
+  background-color: #092f81;
+  padding: 2%;
+}
+.OnsiteDivDesc {
+  margin: 2%;
 
+}
+.OnsiteDivDesc h2{
+    color: rgb(245, 136, 35);
+    font-size: 3rem;
+    text-decoration: underline;
+    font-family: "Poppins", sans-serif;
+}
+.OnsiteDivDesc p
+{
+    padding: 2%;
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+.green
+{
+    color: rgb(63, 223, 63);
+}
+.SafetyHealthTitle span
+{
+    text-align: center;
+    /* width: 100%; */
+}
+@media (max-width:618px) {
+    .DescCardDiv {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
 @media (max-width:1004px) {
     .CardSection {
         grid-template-columns: repeat(2, 1fr);

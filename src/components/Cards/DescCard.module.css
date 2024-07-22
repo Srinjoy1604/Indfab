@@ -1,0 +1,21 @@
+.DescCardMain
+{
+    width: 90%;
+    min-height: 400px ;
+    /* height: 400px; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 1%;
+    position: relative;
+}
+
+.DescCardMain p
+{
+    position: absolute;
+    bottom: 0;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.605);
+    text-align: center;
+    color: white;
+    width: 100%;
+}

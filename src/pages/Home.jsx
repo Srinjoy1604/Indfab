@@ -17,7 +17,11 @@ import crdimg4 from "../images/Home/5426807.png";
 import locimg from "../images/Home/address.png";
 import Footer from "@/components/Footer/Footer";
 import Carousel from "@/components/Intro/Carousel";
+import image1 from "../images/Home/INNOVATION5.png";
+import image2 from "../images/Home/CAROUSEL1.png";
+import image3 from "../images/Home/CAROUSEL2.png";
 function Home() {
+    const images = [image1, image2, image3];
     const colorframer = {
         variantA: { backgroundImage: "linear-gradient(to right top, #ff0000, #ff4237, #ff645c, #f9817e, #ed9c9c)", color: "black" },
         variantB: { backgroundImage: "linear-gradient(to right, #2d65f8, #3654db, #3843bf, #3633a3, #312489, #3e218b, #4a1e8d, #55198f, #7b1dac, #a41ec7, #d018e1, #ff00f8)", color: "white" }
@@ -28,7 +32,7 @@ function Home() {
             <Navbar />
             <div className={`${styles.IntroDiv}`}>
                 
-                <Carousel />
+                <Carousel image={images}/>
 
             </div>
             {/*<div className={`${styles.CardBlock}`}>
@@ -100,12 +104,11 @@ function Home() {
                 <div className={`${styles.Section3Body}`}>
                     <h1>Engineering & Planning</h1>
                     <ul>
-                        <li>Qualified engineers for In house development of detail drawing from design drawings. A0 size plotter and
-                            scanner along with AutoCAD software installed.</li>
-                        <li>Job planning, preparing bill of quantities are carried out for timely execution of Jobs. Proper procedures followed
-                            for vendor selection for bought out items, and raw material procurement.</li>
-                        <li>Estimating, planning, project management and progress monitoring manufacturing schedule under control.</li>
-                        <li>Quality assurance procedure and process documentation are meticulously kept.</li>
+                        <li>Qualified engineers for In house development of detail drawing from design drawings. A0 size plotter and scanner along with AutoCAD software available.</li>
+                        <li>Job planning, preparing bill of quantities are carried out for timely execution of Jobs. </li>
+                        <li>Proper procedures followed for vendor selection for bought out items, and raw material procurement.</li>
+                        <li>Estimating, planning, project management ,progress monitoring and manufacturing schedule are reviewed and monitored on regular basis.</li>
+                        <li>Quality assurance procedure and process documentation are meticulously planned as per plant requirement. </li>
                     </ul>
                 </div>
             </div>
@@ -131,7 +134,7 @@ function Home() {
                     Angul.And it is around 02KM from TATA Steel Limited, Meramandali, Dhenkanal, Odisha on the National Highway.</p>
                 <div className={`${styles.MapDivide}`}>
                     <div className={`${styles.EachMap}`}>
-                        <h1>Meramandali MSME unit</h1>
+                        <h1>Meramandali unit</h1>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14916.918410101498!2d85.2628896!3d20.8224329!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a18c7f21225544f%3A0xf20621315add449b!2sIndfab%20Projects!5e0!3m2!1sen!2sin!4v1717681503247!5m2!1sen!2sin"
                             width="600"
@@ -143,7 +146,7 @@ function Home() {
                         ></iframe>
                     </div>
                     <div className={`${styles.EachMap}`}>
-                        <h1>Nalconagar MSME unit</h1>
+                        <h1>Nalconagar unit</h1>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.6133931762283!2d85.16018749999999!3d20.847312499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a18b0907060f427%3A0x18ee5a1a94651870!2sIndfab!5e0!3m2!1sen!2sin!4v1718901516471!5m2!1sen!2sin" 
                         width="600"
                         height="450"

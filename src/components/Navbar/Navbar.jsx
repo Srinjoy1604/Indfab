@@ -22,12 +22,12 @@ const menuData = [
         dropdown: true,
         items: [
             { name: "About us", link: "/aboutus" },
-            { name: "Nalconagar MSME", link: "/MSME1" },
-            { name: "Meramandali MSME", link: "/MSME2" },
+            { name: "Nalconagar MSME", link: "/MSME2" },
+            { name: "Meramandali MSME", link: "/MSME1" },
             { name: "Certifications", link: "/certificate" },
         ],
     },
-    { name: "Project", link: "/project", dropdown: false },
+    { name: "Contact", link: "/contact", dropdown: false },
     
 ];
 
@@ -56,7 +56,7 @@ function Navbar() {
                     <span className={`${styles.line} ${isActive ? styles.isactive : ''}`}></span>
                     <span className={`${styles.line} ${isActive ? styles.isactive : ''}`}></span>
                 </div>
-                <div className={styles.Logoimg}><img src={img1} alt="Logo" /></div>
+                <div className={styles.Logoimg}><Link to="/"><img src={img1} alt="Logo" /></Link></div>
                 <ul>
                     {menuData.map((menuItem, index) => (
                         <Dropdown

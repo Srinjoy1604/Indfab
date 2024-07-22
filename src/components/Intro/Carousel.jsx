@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from "react";
-import image1 from "../../images/Home/INNOVATION3.png";
-import image2 from "../../images/Home/CAROUSEL1.png";
-import image3 from "../../images/Home/CAROUSEL2.png";
+
 import styles from './Carousel.module.css';
 import { MdNavigateBefore } from "react-icons/md";
 import { MdNavigateNext } from "react-icons/md";
-function Carousel() {
-    const images = [image1, image2, image3];
+function Carousel({image}) {
+    const images = image;
     const [current, setCurrent] = useState(0);
     const [autoplay,setAutoplay]= useState(true);
     let timeout=null;
     useEffect(()=>{
         timeout= autoplay && setTimeout(()=>{
             slideRight();
-        },2500);
+        },3500);
     });
     const slideRight = () => {
         if (current === images.length - 1) {

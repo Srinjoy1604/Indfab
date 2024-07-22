@@ -1,0 +1,42 @@
+.carouselContainer {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .carousel {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .imageContainer {
+    cursor: pointer;
+    
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 400px;
+  }
+  
+  .dialogContent {
+    position: relative;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .dialogImage {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  

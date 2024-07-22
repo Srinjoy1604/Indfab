@@ -44,12 +44,14 @@
     /* background-color: #cbd5e1; */
     /* background-image: linear-gradient(to bottom, #1c28bc, #005ad8, #007ee1, #009ede, #00bad8, #00bcdd, #00bfe3, #00c1e8, #00a8fe, #0089ff, #0061ff, #3d00f8);
     background-image: linear-gradient(to top, #000000, #201717, #382723, #50392c, #644e35); */
-    background: rgba(255, 255, 255, 0.59);
+    background: rgba(255, 255, 255, 0.139);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.3px);
-    -webkit-backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(3.3px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 0;
+    /* position: relative; */
 
 
 }
@@ -81,6 +83,7 @@
     border: 1px solid black;
     width: 100%;
     border-radius: 12px;
+    z-index: 2;
     position: relative;
 
 
@@ -102,11 +105,14 @@
     background-color: rgb(72, 71, 71);
     display: grid;
     place-items: center;
+    z-index: 110%;
 
 }
 
 .AccordionContentDiv {
-    z-index: 2;
+    z-index: 1000;
+    overflow: auto;
+   
     position: absolute;
     width: 100%;
 
@@ -120,6 +126,7 @@
     text-align: center;
     margin: 1%;
     border: 2px solid black;
+    z-index: 2;
 }
 
 .AccordionContent table tr {
@@ -137,6 +144,38 @@
 
 }
 
+.dialogBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    /* background-color: rgb(236, 225, 204); */
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+    /* min-width: 90vw; */
+    width: 100%;
+    min-height: 50vh;
+    display: grid;
+    place-items: center;
+    max-width: 700px;
+    padding: 2%;
+    
+}
+.dialogImgdiv
+{
+    background-color: wheat;
+    padding: 1%;
+}
+
+.dialogBox img
+{
+    width: 100vw;
+    height: 50vh;
+ 
+}
 @media (max-width:443px) {
     .Carddiv {
         width: 90%;

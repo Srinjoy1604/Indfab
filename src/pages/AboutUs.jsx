@@ -49,12 +49,12 @@ function AboutUs() {
             <Navbar />
             <IntroPic image={img1} text={"About Us"} />
             <div className={`${styles.DirectorsDesk}`}>
-                <h1>From the Director's Desk</h1>
+                <h1>Leadership: Our Managing Partner</h1>
                 <div className={`${styles.DirectorWords}`}>
                     <div className={`${styles.DirectorImage}`}>
                         <div><img src={Director}></img></div>
                         <div className={`${styles.DirectorName}`}><h2>Mr. Kalyan Palit</h2></div>
-                        <div className={`${styles.DirectorDesig}`}><h2>Director, INDFAB</h2></div>
+                        <div className={`${styles.DirectorDesig}`}><h2>Managing partner, INDFAB</h2></div>
                     </div>
                     <div className={`${styles.DirectorWordsPara}`}><p>The key to the successful journey is not any of the individual elements.What is important is having all the elements together in
                             a system and must be practiced everyday in a very consistent manner.
@@ -85,9 +85,9 @@ function AboutUs() {
             <div className={`${styles.KeyArea}`}>
                 <h1>Our Key Area</h1>
                 <div className={`${styles.CardSection}`}>
-                    <CustomCard3 title={"Custom Fabrication Solutions"} image={img3} description={"As a measure of vertical integration, we have a modern manufacturing unit to  cater project requirement in Aluminium, Power & Steel sector with three  decades of project experience. We now take up fabrication of custom fabricated  product, hopers, tanks, large diameter duct, stack, technological structures,  conveyor structure operational mechanical spares etc."} />
-                    <CustomCard3 title={"Comprehensive Fabrication Facility"} image={img4} description={"The facility is complete with in house design & planning, certified welding  inspection, shot blasting shop, steel fabrication work as per ASME section IX,  AWS D1.1 & BIS standard is taken up. "} />
-                    <CustomCard3 title={"Industrial Equipment Manufacturing"} image={img5} description={"Indfab, manufactures to supply equipment, pressure vessels, tanks, technological structures , Smelter Plant equipment like pot shells, super structures , anode brackets , pot hood, furnace parts, platforms, hoppers, roller tables, conveyor structures, operational spares to Aluminium, Steel and Power Sector."} />
+                    <CustomCard3 title={"Custom Fabrication Solutions"} image={img3} description={"As a measure of vertical integration, we have a modern manufacturing unit to  cater project requirement in Aluminium, Power & Steel sector with three  decades of project experience. We now take up fabrication of custom fabricated  product, hopers, tanks, large diameter duct, stack, technological structures,  conveyor structure operational mechanical spares ,structural works, tank ,silo , chutes etc."} />
+                    <CustomCard3 title={"Comprehensive Fabrication Facility"} image={img4} description={"The facility is complete with in house design & planning, certified welding  inspection, shot blasting shop, steel fabrication work as per ASME section IX,  AWS D1.1 & BIS standard is taken up.Refurbishing of plant spare is also included. "} />
+                    <CustomCard3 title={"Industrial Equipment Manufacturing"} image={img5} description={"Indfab, manufactures to supply equipment, pressure vessels, tanks, technological structures , Smelter Plant equipment like pot shells, super structures , anode brackets , pot hood, furnace parts, platforms, hoppers, roller tables, conveyor structures, operational spares to Aluminium, Steel and Power Sector,industrial spares and development of import substitute item."} />
                     <CustomCard3 title={"Manufacturing Drawing Digitization"} image={img6} description={"Indfab, also undertakes digitisation of manufacturing drawings for which it has a full-fledged department with AutoCAD draftsmen, scanner and plotters. "} />
                     <CustomCard3 title={"Advanced Machining & Welding Facility"} image={img7} description={"Apart of conventional machine like Lathes, Shaper, Horizontal Boring Machine,  VMC and etc. Our shop is equipped with : plate bending machine with pre pinch  facility up to 300 MT Hydraulic Press, Plano Miller, CNC Oxy flame cutting  machine, column & Boom welding system, welding rotor, MIG & SAW welding  machine etc. SMAW, GMAW, FCAW & SAW welding process is deployed with  certified welders. "} />
                     <CustomCard3 title={"In-house Ultrasonic & Radiography Testing"} image={img8} description={"In house Ultrasonic testing Facility under level-II qualified engineer and we are  also equipped with radiography Pit Room under approval of BARC."} />
@@ -103,7 +103,7 @@ function AboutUs() {
                                     <SimpleSlider images={imageList} />
                                 </div>
                                 <div>
-                                    <h1>IPPL Celebrates Silver Jubilee</h1>
+                                    <h1>INDFAB Celebrates Silver Jubilee</h1>
                                     <div className={`${styles.Accordionpara1}`}>
                                         <p>
                                             We celebrated Silver Jubilee on 28th February, 2010 at Kurunti. Our guests included officers from National Aluminium Company, Vedanta, HINDALCO, associated suppliers and contractors, local friends, media persons and employees.</p>

@@ -43,6 +43,7 @@
     background-image: linear-gradient(to right top, #0d078f, #000e77, #000f5e, #000d46, #07052e);
     background-size: cover;
     background-image: linear-gradient(to top, #2800ff, #1f10ec, #1917da, #161cc7, #151eb5, #0d20a1, #0b218d, #0e2079, #111e5f, #141b44, #15162b, #111112);
+    
 }
 
 .DirectorsDesk h1 {
@@ -258,7 +259,9 @@
 }
 
 .AccordionContentHSE {
-    background: url("../images/ABOUTUS/Rectangle  HSE POLICY.png") no-repeat;
+    /* background: url("../images/ABOUTUS/Rectangle  HSE POLICY.png") no-repeat; */
+    background-image: linear-gradient(to left bottom, #47dcdc, #37d0bf, #37c39f, #41b57f, #4ea65e, #628f3f, #6b7827, #6d6218, #62421a, #4a291c, #2a1717, #000000);
+    background-repeat: no-repeat;
     background-size: cover;
     background-color: white;
     color: black;

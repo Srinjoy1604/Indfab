@@ -5,25 +5,21 @@ import Footer from "@/components/Footer/Footer";
 import styles from "./Q&S.module.css";
 import Qm from "../images/Quality_&_Safety/QualityManage.png";
 import Ql from "../images/Quality_&_Safety/QualityLogo.png";
+import ins1 from "../images/Quality_&_Safety/OnsiteInspection/DyePenetrationTestingofAnodeBracket.jpg";
+import ins2 from "../images/Quality_&_Safety/OnsiteInspection/UltrasonicTestingofDuct.jpg";
+import ins3 from "../images/Quality_&_Safety/OnsiteInspection/UltrasonicTestingofMetal.jpg";
 import TextCard from "@/components/Cards/TextCard";
+import DescCard from "@/components/Cards/DescCard";
 function QualitySafety() {
     return (
         <div>
             <CredentialBar />
             <Navbar />
             <div className={`${styles.IntroPic}`}>
-                <div className={`${styles.TrapeziumDiv}`}>
-                    <div className={`${styles.Trapezium}`}>
-                        <div>
-                            <h1>Quality</h1>
-                            <h1> & </h1>
-                            <h1>Safety</h1>
-                        </div>
-                    </div>
-                </div>
+                <h1><span className={styles.title1}>Quality</span> <span className={styles.title2}>&</span> <span className={styles.title3}>Safety</span></h1>
             </div>
             <div className={`${styles.SafetyHealth}`}>
-                <h1 className={`${styles.SafetyHealthTitle}`}>Safety Health Environment & Quality Policy(“TRIPLE E” MANAGEMENT)</h1>
+                <h1 className={`${styles.SafetyHealthTitle}`}>Safety Health&nbsp;<span className={styles.green}>Environment</span>& Quality Policy(“TRIPLE E” MANAGEMENT)</h1>
                 <div className={`${styles.SafetyHealthdiv}`}>
 
 
@@ -69,6 +65,20 @@ function QualitySafety() {
 
 
                 </div>
+
+            </div>
+            <div className={styles.OnsiteDiv}>
+                <div className={styles.OnsiteDivDesc}>
+                    <h2>On site Inspection</h2>
+                    <p>At INDFAB, we prioritize excellence through meticulous on-site inspections, ensuring precision and reliability in every project we undertake.
+                        We are committed to delivering the highest standards of quality and performance in all our services.</p>
+                </div>
+                <div className={styles.DescCardDiv}>
+                    <DescCard image={ins1} desc={"Dye Penetration Testing of Anode Bracket"} />
+                    <DescCard image={ins2} desc={"Ultrasonic Testing of Duct"} />
+                    <DescCard image={ins3} desc={"Ultrasonic Testing of Metal"} />
+                </div>
+
             </div>
             <Footer />
         </div>

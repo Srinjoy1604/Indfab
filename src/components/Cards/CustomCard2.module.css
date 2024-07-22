@@ -54,7 +54,7 @@ body {
 
 .card:hover .face1 {
     transform: translateY(0);
-    background-image: linear-gradient(to left bottom, #8c00dc, #c600ba, #e80096, #f90074, #ff0057);
+    background-image: linear-gradient(to left bottom, #8c00dc, #33bfe6, #17d2e7, #1519d2, #2a16c4);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
