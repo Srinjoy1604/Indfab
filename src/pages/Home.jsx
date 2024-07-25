@@ -1,11 +1,10 @@
 import React from "react";
 import styles from "../pages/Home.module.css"
-import Intro from "@/components/Intro/Intro";
 import Navbar from "@/components/Navbar/Navbar";
 import CredentialBar from "@/components/CredentialBar/CredentialBar";
 import CustomCard from "@/components/Cards/CustomCard";
 import { color, motion, useAnimation } from "framer-motion";
-import iso1 from "../images/Home/927_iso9001_logo.jpg";
+import iso1 from "../images/Home/927_iso9001_logo.png";
 import iso2 from "../images/Home/iso-14001-logo-E5046E951F-seeklogo.com.png";
 import iso3 from "../images/Home/ISO-45001-logo.png";
 import CustomCard2 from "@/components/Cards/CustomCard2";
@@ -27,14 +26,11 @@ import image7 from "../images/Home/Carousal_Stacker_Buckets.png";
 import image8 from "../images/Home/Carousal_Thimble_press.png";
 import image9 from "../images/Home/Structural_Works_carousal.png";
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { fadeIn } from "../components/Variants.jsx";
+
 import { duration } from "@mui/material";
 function Home() {
     const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9];
-    const colorframer = {
-        variantA: { backgroundImage: "linear-gradient(to right top, #ff0000, #ff4237, #ff645c, #f9817e, #ed9c9c)", color: "black" },
-        variantB: { backgroundImage: "linear-gradient(to right, #2d65f8, #3654db, #3843bf, #3633a3, #312489, #3e218b, #4a1e8d, #55198f, #7b1dac, #a41ec7, #d018e1, #ff00f8)", color: "white" }
-    };
+   
     const text1 = "Precision in every part, excellence in every detail".split(" ");
     return (
         <motion.div>
@@ -45,45 +41,7 @@ function Home() {
                 <Carousel image={images} />
 
             </div>
-            {/*<div className={`${styles.CardBlock}`}>
-                <CustomCard heading={"Founder"} description={"Group Company INDFAB was promoted as a small scale industry in the year 1985 by Prabhat Palit a techno entrepreneur with over 33 years of varied experience in construction industries."} link={"#"} tabular={false} />
-                <CustomCard heading={"Our journey"} description={"Indfab, worked as a sub — vendor of reputed companies like Flak India, McNally Bharat and BST Engineering. Indfab, took up plant maintenance job in the areas of fume treatment plant, alumina handling system, pot room equipment."} link={"#"} tabular={false} />
-                <CustomCard heading={"Office detail"} link={"#"} tabular={true} />
-                <CustomCard heading={""} description={"As a measure of vertical integration, we have a modern manufacturing unit to cater project requirement in Aluminium, Power & Steel sector with three decades of project experience. We now take up fabrication of custom fabricated product, hopers, tanks, large diameter duct, stack, technological structures, conveyor structure operational mechanical spares etc."} link={"#"} tabular={false} />
-                <div className={`${styles.GroupProfile}`}>
-                    <h1>The Group Profile</h1>
-                    <div className={`${styles.WhiteBlock}`}>
-                        <motion.div
-                            whileTap={{ scale: 0.9 }}
-                        >
-                            <a href="#">
-                                <motion.div className={`${styles.RedBlock} ${styles.Block1}`} variants={colorframer}
-                                    initial="variantA"
-                                    whileHover="variantB">INDFAB</motion.div>
-                            </a>
-                        </motion.div>
-                        <div>
-                            <a href="#">
-                                <motion.div className={`${styles.RedBlock} ${styles.Block2}`}
-                                    variants={colorframer}
-                                    initial="variantA"
-                                    whileHover="variantB"
-                                >NALCO WORKSHOP & MERAMANDALI SITE</motion.div>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <motion.div className={`${styles.RedBlock} ${styles.Block3}`}
-                                    variants={colorframer}
-                                    initial="variantA"
-                                    whileHover="variantB"
-                                >PALIT EQUIPMENT SALES</motion.div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>*/}
+           
             <motion.div className={`${styles.OurFounder}`}>
                 <motion.div className={`${styles.OurFounder_para}`}
                     initial={{ x: 100, opacity: 0 }}
@@ -115,7 +73,7 @@ function Home() {
                     viewport={{amount: 0.5, once: true }}
                     transition={{ delay: 0.2, x: { type: "spring", stiffness: 60 }, opacity: { duration: 1 }, ease: "easeIn", duration: 0.7, }}
 
-                ><img src={iso1} style={{ width: "170px" }}></img></motion.div>
+                ><img src={iso1} ></img></motion.div>
                 <motion.div
                     initial={{ y: 100, opacity: 0, mixBlendMode: "multiply" }}
                     whileInView={{ y: 0, opacity: 1 }}

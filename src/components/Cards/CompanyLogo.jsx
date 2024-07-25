@@ -6,6 +6,7 @@ function Company({image})
     return(
         <motion.div className={`${styles.CardMain}`}
         whileHover={{ scale: 1.1 }}    
+        whileTap={{ scale: 1.2 }}    
         >
             <div><img src={image}></img></div>
         </motion.div>
