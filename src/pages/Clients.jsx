@@ -21,7 +21,7 @@ import cmp14 from "../images/Clients/CompanyLogo/cmp14.png";
 import cmp15 from "../images/Clients/CompanyLogo/cmp15.png";
 import cmp16 from "../images/Clients/CompanyLogo/cmp16.png";
 import cmp17 from "../images/Clients/CompanyLogo/cmp17.png";
-
+import { color, motion } from "framer-motion";
 function Clients() {
     return (
         <div>

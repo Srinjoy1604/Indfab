@@ -270,7 +270,8 @@ border: 1px solid rgba(0, 0, 0, 0.46); */
     padding: 1%;
     width: 100%;
     /* background-color: whitesmoke; */
-    background-image: linear-gradient(to bottom, #00ffe1, #5cffff, #b0fcff, #e8faff, #ffffff);
+    /* background-image: linear-gradient(to bottom, #00ffe1, #5cffff, #b0fcff, #e8faff, #ffffff); */
+    background-color: turquoise;
     font-weight: 600;
 
     

@@ -10,7 +10,9 @@ import ins2 from "../images/Quality_&_Safety/OnsiteInspection/UltrasonicTestingo
 import ins3 from "../images/Quality_&_Safety/OnsiteInspection/UltrasonicTestingofMetal.jpg";
 import TextCard from "@/components/Cards/TextCard";
 import DescCard from "@/components/Cards/DescCard";
+import { color, motion, useAnimation } from "framer-motion";
 function QualitySafety() {
+    const text="Environment".split("");
     return (
         <div>
             <CredentialBar />
@@ -19,8 +21,24 @@ function QualitySafety() {
                 <h1><span className={styles.title1}>Quality</span> <span className={styles.title2}>&</span> <span className={styles.title3}>Safety</span></h1>
             </div>
             <div className={`${styles.SafetyHealth}`}>
-                <h1 className={`${styles.SafetyHealthTitle}`}>Safety Health&nbsp;<span className={styles.green}>Environment</span>& Quality Policy(“TRIPLE E” MANAGEMENT)</h1>
-                <div className={`${styles.SafetyHealthdiv}`}>
+                <h1 className={`${styles.SafetyHealthTitle}`}>Safety Health&nbsp;
+                {text.map((el, i) => (
+                <motion.span className={styles.green}
+                initial={{ opacity: 0 }}
+                viewport={{ amount: 0.6,once: true }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                    duration: 2,
+                    delay: i / 10
+                }}
+                key={i}
+                >{el}{" "}</motion.span>))}& Quality Policy(“TRIPLE E” MANAGEMENT)</h1>
+                <motion.div className={`${styles.SafetyHealthdiv}`}
+                initial={{ x: 100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ amount: 0.5,once: true }}
+                transition={{ delay: 0.5, x: { type: "spring", stiffness: 60 }, opacity: { duration: 1 }, ease: "easeIn", duration: 1, }}
+                >
 
 
                     <ul>
@@ -30,7 +48,7 @@ function QualitySafety() {
                         <li>Medical checkup of new employees are mandatory. Safe drinking water is ensured. Wash rooms are maintained properly. Good hygiene at Workers canteen.</li>
                     </ul>
 
-                </div>
+                </motion.div>
             </div>
             <div className={`${styles.QualityManagement}`}>
                 <div className={`${styles.OrangeBox}`}>

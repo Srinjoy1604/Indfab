@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 .Abtsintro {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -42,8 +43,10 @@
     /* background-image: linear-gradient(to left, #ffffff, #fafafb, #f4f4f7, #eeeff4, #e8eaf0, #dadce2, #cbced5, #bdc0c7, #a4a7ad, #8c8f93, #75777a, #5f6062); */
     background-image: linear-gradient(to right top, #0d078f, #000e77, #000f5e, #000d46, #07052e);
     background-size: cover;
-    background-image: linear-gradient(to top, #2800ff, #1f10ec, #1917da, #161cc7, #151eb5, #0d20a1, #0b218d, #0e2079, #111e5f, #141b44, #15162b, #111112);
-    
+    /* background-image: linear-gradient(to top, #2800ff, #1f10ec, #1917da, #161cc7, #151eb5, #0d20a1, #0b218d, #0e2079, #111e5f, #141b44, #15162b, #111112);
+    background-image: linear-gradient(to bottom, #09123a, #00264c, #00395b, #004d67, #166071, #2a727e, #3d848b, #509698, #5eacac, #6dc3c1, #7ddad6, #8df2ea);
+    background-image: linear-gradient(to bottom, #09123a, #002c55, #00476e, #006383, #1e7f96, #3392a3, #48a5af, #5db8bb, #68c6c7, #74d5d3, #80e3de, #8df2ea); */
+    background-image: linear-gradient(to bottom, #09123a, #02315d, #00527f, #00759e, #009ab9, #0fa1b7, #23a8b5, #35aeb2, #2c9898, #23827f, #1b6d68, #125852);
 }
 
 .DirectorsDesk h1 {
@@ -69,8 +72,10 @@
     align-items: center;
     text-align: center;
     /* background-color: black; */
+    border-radius: 50%;
     width: 100%;
     height: 100%;
+    align-content: center;
 }
 
 /* .DirectorImage img
@@ -83,7 +88,10 @@
 } */
 .DirectorName h2 {
     font-size: 1.5rem;
-    color: #F6B43E;
+    color: #df920b;
+    color: #000e77;
+    font-weight: 600;
+    /* background-color: #000d4680; */
 
 }
 
@@ -139,6 +147,7 @@
 .DirectorDesig h2 {
     font-size: 1.1rem;
     color: #10abc0;
+    color: white;
 }
 
 .DirectorImage img {
@@ -259,8 +268,8 @@
 }
 
 .AccordionContentHSE {
-    /* background: url("../images/ABOUTUS/Rectangle  HSE POLICY.png") no-repeat; */
-    background-image: linear-gradient(to left bottom, #47dcdc, #37d0bf, #37c39f, #41b57f, #4ea65e, #628f3f, #6b7827, #6d6218, #62421a, #4a291c, #2a1717, #000000);
+    background: url("../images/ABOUTUS/Rectangle  HSE POLICY.png") no-repeat;
+    /* background-image: linear-gradient(to left bottom, #47dcdc, #37d0bf, #37c39f, #41b57f, #4ea65e, #628f3f, #6b7827, #6d6218, #62421a, #4a291c, #2a1717, #000000); */
     background-repeat: no-repeat;
     background-size: cover;
     background-color: white;
@@ -270,8 +279,15 @@
 .AccordionContentHSE h1 {
     padding: 2%;
     font-weight: 700;
+    font-family: "Cinzel", serif;
+    color: rgb(7, 13, 95);
+    word-wrap: break-word;
+    font-size: 2rem;
 }
-
+.AccordionContentHSE p
+{
+    font-weight: 600;
+}
 @media (max-width:667px) {
     .Abtsintro {
         grid-template-rows: 1fr 0.2fr 1fr;

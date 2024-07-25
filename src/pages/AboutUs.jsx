@@ -33,8 +33,10 @@ import AB15 from "../images/ABOUTUS/Golden Jubilee/AB15.jpg";
 import AB16 from "../images/ABOUTUS/Golden Jubilee/AB16.jpg";
 import AB17 from "../images/ABOUTUS/Golden Jubilee/AB17.jpg";
 import AB18 from "../images/ABOUTUS/Golden Jubilee/AB18.jpg";
-import Director from "../images/ABOUTUS/Director.png";
+import Director from "../images/ABOUTUS/Managerpic.png";
 import Quotation from "../images/ABOUTUS/QUOTETIONMARK.png";
+import { color, motion } from "framer-motion";
+
 import {
     Accordion,
     AccordionContent,
@@ -43,47 +45,105 @@ import {
 } from "@/components/ui/accordion";
 function AboutUs() {
     const imageList = [AB0, AB1, AB2, AB3, AB4, AB5, AB6, AB7, AB8, AB9, AB10, AB11, AB12, AB13, AB14, AB15, AB16, AB17, AB18];
+    const text = "The key to the successful journey is not any of the individual elements.What is important is having all the elements together in a system and must be practiced everyday in a very consistent manner.".split(" ");
+    const Managetext = "From Manager's Desk".split("");
     return (
-        <div>
+        <motion.div>
             <CredentialBar />
             <Navbar />
             <IntroPic image={img1} text={"About Us"} />
             <div className={`${styles.DirectorsDesk}`}>
-                <h1>Leadership: Our Managing Partner</h1>
+                <h1>
+                    {Managetext.map((el2, i) => (
+
+
+                        <motion.span
+                            initial={{y:100, opacity:0}}
+                            viewport={{ amount: 0.6,once: true }}
+                            whileInView={{y:0, opacity: 1 }}
+                            transition={{
+                                
+                                duration: 0.5,
+                                ease:"easeInOut",
+                                delay: i/ 10
+                            }}
+                            key={i}
+                            
+                            >{el2}{""}</motion.span>
+                    ))}
+                </h1>
+
                 <div className={`${styles.DirectorWords}`}>
                     <div className={`${styles.DirectorImage}`}>
-                        <div><img src={Director}></img></div>
+                        <motion.div
+                            initial={{ x: -100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            viewport={{amount: 0.6, once: true }}
+                            transition={{ delay: 0.2, x: { type: "spring", stiffness: 60 }, opacity: { duration: 0.5 }, ease: "easeIn", duration: 0.5, }}
+
+                        ><img src={Director}></img></motion.div>
                         <div className={`${styles.DirectorName}`}><h2>Mr. Kalyan Palit</h2></div>
-                        <div className={`${styles.DirectorDesig}`}><h2>Managing partner, INDFAB</h2></div>
+                        <div className={`${styles.DirectorDesig}`}><h2>Managing partner, Indfab</h2></div>
                     </div>
-                    <div className={`${styles.DirectorWordsPara}`}><p>The key to the successful journey is not any of the individual elements.What is important is having all the elements together in
-                            a system and must be practiced everyday in a very consistent manner.
-                    </p></div>
+                    <div className={`${styles.DirectorWordsPara}`}>
+                        <p>
+                            {text.map((el, i) => (
+                                <motion.span
+                                    initial={{ opacity: 0 }}
+                                    viewport={{ once: true }}
+                                    whileInView={{ opacity: 1 }}
+
+                                    transition={{
+                                        duration: 0.2,
+                                        delay: i / 10
+                                    }}
+                                    key={i}
+                                >{el}{" "}
+
+                                </motion.span>
+                            ))}
+                        </p>
+                    </div>
                 </div>
                 <div className={`${styles.QuoteDiv}`}>
                     <div className={`${styles.Quote}`}>
                         <p><img src={Quotation}></img>The years ahead will be the best for those who learn To balance dreams and discipline.The future
                             Will belong to those who embrace the potential of wider opportunities but recognise the realities
-                             of more constraint resources and find new solutions that permit doing more with less.</p>
-                             <div>-Rosabeth Moss Kanter</div>
-                    
+                            of more constraint resources and find new solutions that permit doing more with less.</p>
+                        <div>-Rosabeth Moss Kanter</div>
+
                     </div>
                 </div>
-                
+
             </div>
-            <div className={`${styles.Abtsintro}`}>
-                <img src={img2}></img>
+            <motion.div className={`${styles.Abtsintro}`}>
+                <motion.img src={img2}
+                initial={{ x: -100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ amount: 0.5,once: true }}
+                transition={{ delay: 0.2, x: { type: "spring", stiffness: 60 }, opacity: { duration: 1 }, ease: "easeIn", duration: 1, }}
+                ></motion.img>
                 <h2>"INDFAB: Journey from Small Scale Industry to Reputable Engineering Firm"</h2>
 
-                <ul>
+                <motion.ul
+                initial={{ x: 100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{amount: 0.5, once: true }}
+                transition={{ delay: 0.2, x: { type: "spring", stiffness: 60 }, opacity: { duration: 1 }, ease: "easeIn", duration: 1, }}
+                >
                     <li>Group Company INDFAB was promoted as a small scale industry in  the year 1985 by Prabhat Palit a techno entrepreneur with over 33  years of varied experience in construction industries. In this family  owned business the two promoters Kalyan Palit & Ashish Palit have  worked closely for the last 28 Years contributing towards growth,  consolidation in different functional areas, diversification  programme and costumer relation.</li>
                     <li>Indfab, worked as a sub - vendor of reputed companies like Flak  India, McNally Bharat and BST Engineering.</li>
                     <li>Indfab, took up plant maintenance job in the areas of fume  treatment plant, alumina handling system, pot room equipment,  anode paste plant, rodding shop and plant utility system  subsequently on commissioning of the Smelter plant from the year  1988 and was given Ancillary status by National Aluminium Co. in  the year 1993. </li>
-                </ul>
+                </motion.ul>
 
-            </div>
-            <div className={`${styles.KeyArea}`}>
-                <h1>Our Key Area</h1>
+            </motion.div>
+            <div className={`${styles.KeyArea}`} id="keyarea">
+                <motion.h1
+                initial={{ y: -100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ amount: 0.6,once: true }}
+                transition={{ delay: 0.5, x: { type: "spring", stiffness: 60 }, opacity: { duration: 0.5 }, ease: "easeIn", duration: 0.5, }}
+                >Our Key Area</motion.h1>
                 <div className={`${styles.CardSection}`}>
                     <CustomCard3 title={"Custom Fabrication Solutions"} image={img3} description={"As a measure of vertical integration, we have a modern manufacturing unit to  cater project requirement in Aluminium, Power & Steel sector with three  decades of project experience. We now take up fabrication of custom fabricated  product, hopers, tanks, large diameter duct, stack, technological structures,  conveyor structure operational mechanical spares ,structural works, tank ,silo , chutes etc."} />
                     <CustomCard3 title={"Comprehensive Fabrication Facility"} image={img4} description={"The facility is complete with in house design & planning, certified welding  inspection, shot blasting shop, steel fabrication work as per ASME section IX,  AWS D1.1 & BIS standard is taken up.Refurbishing of plant spare is also included. "} />
@@ -130,19 +190,19 @@ function AboutUs() {
                                     Design, Development, Fabrication,Manufacture & supply of Heavy precision components, machine spares, enginerring equipments,machinery,onsiteTurnkey projects by meeting the statutory/regulatory requirements as applicable to us.
                                 </p>
                                 <p>
-                                We shall ensure Quality,reliability,on time Delivery & cost effectiveness in our products/services as per need of esteemed customers.
+                                    We shall ensure Quality,reliability,on time Delivery & cost effectiveness in our products/services as per need of esteemed customers.
 
-                                We are committed to make efficient use of natural resources like water, energy ,air,oil etc., reducing and preventing pollution, promoting waste avoidance and recycling measures by adhering to best practices.
+                                    We are committed to make efficient use of natural resources like water, energy ,air,oil etc., reducing and preventing pollution, promoting waste avoidance and recycling measures by adhering to best practices.
                                 </p>
                                 <p>
-                                We are committed to provide a safe and healthy work environment to our employees, suppliers and customers as an integral parts of business performance.
-                                
-                                Quality, Environment, Occupational Health & Safety objectives are established at each functional and operational level as required and get reviewed periodically for it's continuing suitability and performance.
+                                    We are committed to provide a safe and healthy work environment to our employees, suppliers and customers as an integral parts of business performance.
+
+                                    Quality, Environment, Occupational Health & Safety objectives are established at each functional and operational level as required and get reviewed periodically for it's continuing suitability and performance.
                                 </p>
                                 <p>
-                                We are committed to ensure continual improvement based upon the practice of risk assessment as per requirement in all associated business processes/activities and shall ensure process efficiency and effectiveness of QEHS Management System in our organization.
-                                
-                                We shall comply to the requirement of Social accountability by adpting ethical work culture and business practices.
+                                    We are committed to ensure continual improvement based upon the practice of risk assessment as per requirement in all associated business processes/activities and shall ensure process efficiency and effectiveness of QEHS Management System in our organization.
+
+                                    We shall comply to the requirement of Social accountability by adpting ethical work culture and business practices.
                                 </p>
                             </AccordionContent>
                         </AccordionItem>
@@ -154,7 +214,7 @@ function AboutUs() {
 
             <Footer />
 
-        </div>
+        </motion.div>
     );
 }
 

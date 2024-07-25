@@ -45,14 +45,38 @@ function Manufacturing_Unit() {
         initial: { opacity: "0%", backgroundColor: "none" },
         animate: { opacity: "100%", backgroundColor: "red" },
     }
+    const text1 = "MAIN".split(" ");
+    const text2 = "MACHINES".split(" ");
     return (
         <div>
             <CredentialBar />
             <Navbar />
             <IntroPic image={intro1} text={"Manufacturing Unit"} style={introPicStyle} />
-            <div className={`${styles.MainEqpintro}`}>
-                <h1>MAIN</h1>
-                <h1>MACHINES</h1>
+            <div className={`${styles.MainEqpintro}`} id="mainMachines">
+            {text1.map((el, i) => (
+                <motion.h1
+                initial={{ opacity: 0 }}
+                viewport={{ once: true }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                    duration: 2,
+                    delay: i / 10
+                }}
+                key={i}
+                >{el}{" "}</motion.h1>
+            ))}
+            {text2.map((el2, i) => (
+                <motion.h1
+                initial={{ opacity: 0 }}
+                viewport={{ once: true }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                    duration: 2,
+                    delay: i / 10
+                }}
+                key={i}
+                >{el2}{" "}</motion.h1>
+            ))}
             </div>
             <div className={`${styles.MachineCards}`}>
                 <MachineCard image={m1} name={"ESAB CNC  Oxy-Fuel Cutting Machine (CM - 01)"} specs={[{ title: "Make", desc: "ESAB" }, { title: "Machine Width", desc: "4625mm" }, { title: "Speed Range", desc: "3000mm/min" }, { title: "Cutting Width", desc: "2700mm" }, { title: "Cutting Length", desc: "13000mm" }]} />
@@ -420,13 +444,13 @@ function Manufacturing_Unit() {
                 <div className={`${styles.CapCard}`}>
                     <div className={`${styles.CapCard1}`}>
                         <p>General Structural Job (Medium To Heavy) :500 MT</p>
-                        <p>Equipment &Technological Structural Work :100 MT</p>
+                        <p>Equipment & Technological Structural Work :100 MT</p>
                         <p>Refurbishing Work : As per the requirements.</p>
                     </div>
                    
                 </div>
             </div>
-            <div className={`${styles.WorkshopSectionDiv}`}>
+            <div className={`${styles.WorkshopSectionDiv}`} id="OurWorkshops">
                 <h1>Our Workshops</h1>
                 <div className={`${styles.WorkshopSection}`}>
                     <Link to="/MSME2">

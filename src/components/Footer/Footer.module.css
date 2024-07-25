@@ -32,26 +32,38 @@
     gap: 2%;
     font-size: 1rem;
     place-items: center;
+    margin: 1%;
 }
 
 .FooterItem ul {
     display: grid;
-    list-style: disc;
+    /* list-style: disc; */
 }
 
 .FooterItem li {
     margin: 2%;
+    /* background-color: #ff63476e; */
+    text-align: center;
+    padding: 1%;
+    /* border-bottom: 1px solid rgb(142, 141, 141); */
+    text-wrap: nowrap;
+    font-size: 1.1rem;
+    padding: 2%;
+   
 
 
 }
 
 .FooterItem h2 {
     text-align: center;
-    text-decoration-line: underline;
-    text-decoration-color: #ff6347;
-    text-decoration-style: dashed;
-    text-decoration-thickness: 2px;
+    /* text-decoration-line: underline;
+    text-decoration-color: goldenrod;
+    text-decoration-style: dashed; */
+    text-decoration-thickness: 3px;
     font-size: 1.5rem;
+    color: rgb(114, 241, 241);
+    color: #FF6347;
+    text-decoration: underline;
 }
 
 .FooterTag {
@@ -76,10 +88,12 @@
 
 .FooterTag p {
     background-color: #ff6347;
+    background-color: rgb(80, 80, 80);
+   
 }
 
 .FooterBottom {
-    background-color: rgb(211, 207, 207);
+    background-color: rgb(239, 235, 235);
     color: black;
     text-align: center;
     border: 2px solid grey;

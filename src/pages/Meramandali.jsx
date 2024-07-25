@@ -50,6 +50,7 @@ import sm21 from "../images/Meramandali/D&HWeldingSeminar/semi (21).jpg";
 import sm22 from "../images/Meramandali/D&HWeldingSeminar/semi (22).jpg";
 import sm23 from "../images/Meramandali/D&HWeldingSeminar/semi (23).jpg";
 import sm24 from "../images/Meramandali/D&HWeldingSeminar/semi (24).jpg";
+import { color, motion } from "framer-motion";
 function Meramandali() {
     const images = [
         picture0,
@@ -81,8 +82,18 @@ function Meramandali() {
                     <SimpleSlider images={images} />
                 </div>
                 <div className={styles.MapRegion}>
-                    <div><h2>Reach Us</h2></div>
-                    <div className={styles.MapHolder}>
+                    <motion.div
+                    initial={{ x: -100, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{amount: 0.4, once: true }}
+                    transition={{ delay: 0.2, x: { type: "spring", stiffness: 60 }, opacity: { duration: 0.5 }, ease: "easeIn", duration: 0.5, }}
+                    ><h2>Reach Us</h2></motion.div>
+                    <motion.div className={styles.MapHolder}
+                    initial={{ x: 100, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{amount: 0.4, once: true }}
+                    transition={{ delay: 0.2, x: { type: "spring", stiffness: 60 }, opacity: { duration: 0.5 }, ease: "easeIn", duration: 0.5, }}
+                    >
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14916.918410101498!2d85.2628896!3d20.8224329!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a18c7f21225544f%3A0xf20621315add449b!2sIndfab%20Projects!5e0!3m2!1sen!2sin!4v1717681503247!5m2!1sen!2sin"
                             width="600"
@@ -92,7 +103,7 @@ function Meramandali() {
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
                         ></iframe>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
             <div className={styles.eventsDiv}>

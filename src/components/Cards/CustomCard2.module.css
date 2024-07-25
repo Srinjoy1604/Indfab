@@ -122,7 +122,7 @@ body {
     background: #333;
     color: #fff;
 }
-@media (max-width:443) {
+@media (max-width:443px) {
     .face {
 
         max-width: 450px;
@@ -131,7 +131,23 @@ body {
     }
     .face1 {
 
-        transform: translateY(210px);
+        transform: translateY(250px);
+    }
+    .face2 {
+
+        transform: translateY(-200px);
+    }
+}
+@media (max-width:298px) {
+    .face {
+
+        max-width: 450px;
+        height: 450px;
+
+    }
+    .face1 {
+
+        transform: translateY(250px);
     }
     .face2 {
 

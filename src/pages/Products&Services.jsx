@@ -18,14 +18,17 @@ import A10 from "../images/Products&Services/A10.png";
 import A11 from "../images/Products&Services/A11.png";
 import A12 from "../images/Products&Services/A12.png";
 import A13 from "../images/Products&Services/A13.png";
+import A14 from "../images/Products&Services/S.M.Plant.jpg";
 import RWB1 from "../images/Products&Services/RWB1.png";
 import RWA1 from "../images/Products&Services/RWA1.png";
 import RWB2 from "../images/Products&Services/RWB2.png";
 import RWA2 from "../images/Products&Services/RWA2.png";
 import RWB3 from "../images/Products&Services/RWB3.png";
 import RWA3 from "../images/Products&Services/RWA3.png";
+
 import oS from "../images/Products&Services/ONSUPPLYDESIGN.png";
 import oSe from "../images/Products&Services/ONSERVICEDESIGN.png";
+import { color, motion, useAnimation } from "framer-motion";
 function ProductsServices() {
     return (
         <div>
@@ -36,8 +39,13 @@ function ProductsServices() {
                     <h1>Products & Services</h1>
                 </div>
             </div>
-            <div className={`${styles.AchievDiv}`}>
-                <h1>Our Achievements</h1>
+            <div className={`${styles.AchievDiv}`} id="achievments">
+                <motion.h1 
+                initial={{ x: -100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2, x: { type: "spring", stiffness: 60 }, opacity: { duration: 1 }, ease: "easeIn", duration: 1, }}
+                >Our Achievements</motion.h1>
                 <div className={`${styles.AchievCard}`}>
                     <ImageCard1 image={A1} desc={"Reclaimer Bucket: Size:  385 Lit, 417 Lit & 577 Lit"} />
                     <ImageCard1 image={A2} desc={"Briddle Roll :- Size: 500 x 2300 with T.C Coating"} />
@@ -52,17 +60,23 @@ function ProductsServices() {
                     <ImageCard1 image={A11} desc={"MLLB- With Trolley"} />
                     <ImageCard1 image={A12} desc={"Quenching Chambe"} />
                     <ImageCard1 image={A13} desc={"Journal Housing"} />
+                    <ImageCard1 image={A14} desc={"S.M. Plant"} />
                 </div>
             </div>
-            <div className={`${styles.ReburfishedWorkDiv}`}>
-                <h1 className={`${styles.ReburfishedWorkDivHead}`}>Some Refurbishing Works</h1>
+            <div className={`${styles.ReburfishedWorkDiv}`} id="Refurbish">
+                <motion.h1 className={`${styles.ReburfishedWorkDivHead}`}
+                initial={{ x: 100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2, x: { type: "spring", stiffness: 60 }, opacity: { duration: 1 }, ease: "easeIn", duration: 1, }}
+                >Some Refurbishing Works</motion.h1>
                 <div className={`${styles.ReburfishedWork}`}>
                     <AfterBefore image1={RWB1} image2={RWA1} name={"Journal Bearing Housing"} />
                     <AfterBefore image1={RWB2} image2={RWA2} name={"Shovel Bucket for Pot Line"} />
                     <AfterBefore image1={RWB3} image2={RWA3} name={"Briddle Roll"} />
                 </div>
             </div>
-            <div className={`${styles.ProcessWorkDiv}`}>
+            <div className={`${styles.ProcessWorkDiv}`} id="ProcessWork" >
                 <h1 className={`${styles.ReburfishedWorkDivHead}`}>Our Process of Work</h1>
                 <div className={`${styles.ProcessofWorkBlock}`}>
                     <div className={`${styles.ProcessofWork1}`}>

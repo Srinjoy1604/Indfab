@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import styles from "./Machine_cards.module.css";
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faXmark} from '@fortawesome/free-solid-svg-icons';
+import { motion } from "framer-motion";
 import {
     Accordion,
     AccordionContent,
@@ -21,7 +22,11 @@ function MachineCard({ image, name, specs }) {
     }
     return (
 
-        <div className={`${styles.Carddiv}`}>
+        <motion.div className={`${styles.Carddiv}`} 
+                whileInView={{ scale: 1 }} 
+                initial={{ scale: 0 }}
+                transition={{duration:0.5,ease:"easeInOut"}}
+        >
             <dialog ref={dialogRef} className={`backdrop:bg-black/85 overflow-visible ${styles.dialogBox}`}>
                 {activeImage &&
 
@@ -77,7 +82,7 @@ function MachineCard({ image, name, specs }) {
 
 
 
-        </div>
+        </motion.div>
     );
 }
 

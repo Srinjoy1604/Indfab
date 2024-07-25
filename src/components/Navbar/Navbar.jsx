@@ -22,8 +22,8 @@ const menuData = [
         dropdown: true,
         items: [
             { name: "About us", link: "/aboutus" },
-            { name: "Nalconagar MSME", link: "/MSME2" },
-            { name: "Meramandali MSME", link: "/MSME1" },
+            { name: "Nalconagar unit", link: "/MSME2" },
+            { name: "Meramandali unit", link: "/MSME1" },
             { name: "Certifications", link: "/certificate" },
         ],
     },

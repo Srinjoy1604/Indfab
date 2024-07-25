@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './CustomCard2.module.css';
-
-const CustomCard2 = ({title,description,image}) => {
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+const CustomCard2 = ({title,description,image,url}) => {
     return (
         <div className={`${styles.container}`}>
 
@@ -15,7 +16,7 @@ const CustomCard2 = ({title,description,image}) => {
                 <div className={`${styles.face} ${styles.face2}`}>
                     <div className={`${styles.content}`}>
                         <p>{description}</p>
-                        <a href="#">Read More</a>
+                        <HashLink to={url}>Read More</HashLink>
                     </div>
                 </div>
             </div>

@@ -162,7 +162,8 @@ body {
     place-items: center;
     /* border-radius: 16px; */
     background-color: wheat;
-    background-image: linear-gradient(to left, #ffffff, #fdf0fc, #ffdfea, #ffd0c9, #ffc7a2, #feca96, #f9cf8a, #efd580, #f2de90, #f6e7a1, #faf0b1, #fff9c2);
+    /* background-image: linear-gradient(to left, #ffffff, #fdf0fc, #ffdfea, #ffd0c9, #ffc7a2, #feca96, #f9cf8a, #efd580, #f2de90, #f6e7a1, #faf0b1, #fff9c2); */
+    background-image: linear-gradient(to right, #fff3e5, #e6eaca, #b8e5c1, #78ded1, #17d2f1);
 }
 
 .Isolink {
@@ -222,7 +223,7 @@ body {
     height: 300px;
     align-content: center;
     text-align: center;
-    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.6);
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: #242424;
@@ -314,12 +315,20 @@ body {
     padding: 2%;
     font-size: 1.3rem;
     text-align: center;
+    background-color: #00000094;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
 }
 
 @media (max-width:358px) {
     .MapDivide {
        
         grid-template-columns: repeat(1, 1fr);
+    }
+    .QualitiesSectiontitle {
+        font-size: 1.7rem;
     }
 }
 
