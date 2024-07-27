@@ -33,19 +33,20 @@ function Contact() {
                     <tbody>
                         <tr>
                             <td rowSpan={3} id={styles.Spanned}>Sales/ Service</td>
-                            <td>Ajay Ghosh</td>
-                            <td><a href="tel:+919861175214" className={styles.phonenum}><img src={ph}></img>+91 9861175214</a></td>
-                            <td ><a href="mailto:ajay.ghosh@indfab.in" id={styles.emailLink}>ajay.ghosh@indfab.in</a></td>
+                            <td>Gobinda Soren</td>
+                            <td><a href="tel:+919861549902" className={styles.phonenum}><img src={ph}></img>+91 9861549902</a></td>
+                            <td ><a href="mailto:gobinda.soren@indfab.in" id={styles.emailLink}>gobinda.soren@indfab.in</a></td>
                         </tr>
+
                         <tr>
                             <td>Kanhu Charan Nayak</td>
                             <td><a href="tel:+919437902749" className={styles.phonenum}><img src={ph}></img>+91 9437902749</a></td>
                             <td><a href="mailto:kanhv.nayak@indfab.in" id={styles.emailLink}>kanhu.nayak@indfab.in</a></td>
                         </tr>
                         <tr>
-                            <td>Gobinda Soren</td>
-                            <td><a href="tel:+919861549902" className={styles.phonenum}><img src={ph}></img>+91 9861549902</a></td>
-                            <td ><a href="mailto:gobinda.soren@indfab.in" id={styles.emailLink}>gobinda.soren@indfab.in</a></td>
+                            <td>Ajay Ghosh</td>
+                            <td><a href="tel:+919861175214" className={styles.phonenum}><img src={ph}></img>+91 9861175214</a></td>
+                            <td ><a href="mailto:ajay.ghosh@indfab.in" id={styles.emailLink}>ajay.ghosh@indfab.in</a></td>
                         </tr>
 
                     </tbody>
@@ -72,12 +73,12 @@ function Contact() {
                 </table>
                 <table>
                     <tbody>
-                    <tr>
-                    <td rowSpan={1} id={styles.Spanned}>HRA</td>
-                    <td>Umakanta Sahoo</td>
-                    <td><a href="tel:+919439672650" className={styles.phonenum}><img src={ph}></img>+91 9439672650</a></td>
-                    <td ><a href="mailto:umakanta@indfab.in " id={styles.emailLink}>umakanta@indfab.in </a></td>
-                </tr>
+                        <tr>
+                            <td rowSpan={1} id={styles.Spanned}>HRA</td>
+                            <td>Umakanta Sahoo</td>
+                            <td><a href="tel:+919439672650" className={styles.phonenum}><img src={ph}></img>+91 9439672650</a></td>
+                            <td ><a href="mailto:umakanta@indfab.in " id={styles.emailLink}>umakanta@indfab.in </a></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
