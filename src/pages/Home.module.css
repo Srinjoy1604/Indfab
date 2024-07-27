@@ -39,6 +39,8 @@ body {
     padding-left: 0;
     padding-right: 0;
     /* max-height: 1200px; */
+    
+
     background-image: linear-gradient(to bottom, #000000, #1a1a1a, #2d2d2d, #414142, #565758, #565758, #565758, #565758, #414142, #2d2d2d, #1a1a1a, #000000);
 }
 

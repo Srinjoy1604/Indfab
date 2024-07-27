@@ -16,7 +16,7 @@ const CustomCard2 = ({title,description,image,url}) => {
                 <div className={`${styles.face} ${styles.face2}`}>
                     <div className={`${styles.content}`}>
                         <p>{description}</p>
-                        <HashLink to={url}>Read More</HashLink>
+                        <HashLink to={url} className={styles.readmore}>Read More</HashLink>
                     </div>
                 </div>
             </div>
