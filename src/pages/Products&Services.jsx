@@ -57,8 +57,8 @@ function ProductsServices() {
                     <ImageCard1 image={A8} desc={"Shovel Bucket:  SS-310"} />
                     <ImageCard1 image={A9} desc={"Screw Conveyor"} />
                     <ImageCard1 image={A10} desc={"Baffle"} />
-                    <ImageCard1 image={A11} desc={"MLLB- With Trolley"} />
-                    <ImageCard1 image={A12} desc={"Quenching Chambe"} />
+                    <ImageCard1 image={A11} desc={"MLLB- With Trolly"} />
+                    <ImageCard1 image={A12} desc={"Quenching Chamber"} />
                     <ImageCard1 image={A13} desc={"Journal Housing"} />
                     <ImageCard1 image={A14} desc={"S.M. Plant"} />
                 </div>
