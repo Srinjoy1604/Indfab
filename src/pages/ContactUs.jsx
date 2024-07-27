@@ -26,7 +26,7 @@ function Contact() {
                             <td ><a href="mailto:info.works@indfab.in" id={styles.emailLink}>info.works@indfab.in</a></td>
                         </tr>
 
-                       
+
                     </tbody>
                 </table>
                 <table>
@@ -52,21 +52,31 @@ function Contact() {
                 </table>
                 <table>
                     <tbody>
+                        <tr>
+                            <td rowSpan={3} id={styles.Spanned}>Manufacturing / Production</td>
+                            <td>Dilip Ku. Sahu</td>
+                            <td><a href="tel:+919937619473" className={styles.phonenum}><img src={ph}></img>+91 9937619473</a></td>
+                            <td ><a href="mailto:dksahoo73@gmail.com" id={styles.emailLink}>dksahoo73@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Soumya Ranjan Sahu</td>
+                            <td><a href="tel:+919777407412" className={styles.phonenum}><img src={ph}></img>+91 9777407412</a></td>
+                            <td><a href="mailto:soumyaranjan.sahu@indfab.in" id={styles.emailLink}>soumyaranjan.sahu@indfab.in</a></td>
+                        </tr>
+                        <tr>
+                            <td>Kshirod Swain</td>
+                            <td><a href="tel:+919437444911" className={styles.phonenum}><img src={ph}></img>+91 9437444911</a></td>
+                            <td><a href="mailto:indfab.kurunti@gmail.com" id={styles.emailLink}>indfab.kurunti@gmail.com</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
                     <tr>
-                    <td rowSpan={3} id={styles.Spanned}>Manufacturing / Production</td>
-                    <td>Dilip Ku. Sahu</td>
-                    <td><a href="tel:+919937619473" className={styles.phonenum}><img src={ph}></img>+91 9937619473</a></td>
-                    <td ><a href="mailto:dksahoo73@gmail.com" id={styles.emailLink}>dksahoo73@gmail.com</a></td>
-                </tr>
-                <tr>
-                    <td>Soumya Ranjan Sahu</td>
-                    <td><a href="tel:+919777407412" className={styles.phonenum}><img src={ph}></img>+91 9777407412</a></td>
-                    <td><a href="mailto:soumyaranjan.sahu@indfab.in" id={styles.emailLink}>soumyaranjan.sahu@indfab.in</a></td>
-                </tr>
-                <tr>
-                    <td>Kshirod Swain</td>
-                    <td><a href="tel:+919437444911" className={styles.phonenum}><img src={ph}></img>+91 9437444911</a></td>
-                    <td><a href="mailto:indfab.kurunti@gmail.com" id={styles.emailLink}>indfab.kurunti@gmail.com</a></td>
+                    <td rowSpan={1} id={styles.Spanned}>HRA</td>
+                    <td>Umakanta Sahoo</td>
+                    <td><a href="tel:+919439672650" className={styles.phonenum}><img src={ph}></img>+91 9439672650</a></td>
+                    <td ><a href="mailto:umakanta@indfab.in " id={styles.emailLink}>umakanta@indfab.in </a></td>
                 </tr>
                     </tbody>
                 </table>
