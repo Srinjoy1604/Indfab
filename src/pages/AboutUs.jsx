@@ -46,7 +46,7 @@ import {
 function AboutUs() {
     const imageList = [AB0, AB1, AB2, AB3, AB4, AB5, AB6, AB7, AB8, AB9, AB10, AB11, AB12, AB13, AB14, AB15, AB16, AB17, AB18];
     const text = "The key to the successful journey is not any of the individual elements.What is important is having all the elements together in a system and must be practiced everyday in a very consistent manner.".split(" ");
-    const Managetext = "From Manager's Desk".split("");
+    const Managetext = "Our Leadership".split("");
     return (
         <motion.div>
             <CredentialBar />

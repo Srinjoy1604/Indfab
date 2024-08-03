@@ -21,7 +21,7 @@ function Contact() {
                             <td><a href="mailto:kalyan.palit@indfab.in" id={styles.emailLink}>kalyan.palit@indfab.in</a></td>
                         </tr>
                         <tr>
-                            <td>Abaya Kumar Nayak</td>
+                            <td>Avaya Kumar Nayak</td>
                             <td><a href="tel:+919437013914" className={styles.phonenum}><img src={ph}></img>+91 9437013914</a></td>
                             <td ><a href="mailto:info.works@indfab.in" id={styles.emailLink}>info.works@indfab.in</a></td>
                         </tr>

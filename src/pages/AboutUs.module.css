@@ -57,6 +57,8 @@
     background: radial-gradient(circle farthest-corner at center center, #F2804C 0%, #F6B43E 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: "Cinzel", serif;
+    font-weight: 500;
 }
 
 .DirectorWords {
