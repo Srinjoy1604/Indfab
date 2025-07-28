@@ -17,6 +17,16 @@ module.exports = {
       },
     },
     extend: {
+      
+      fontFamily: {
+        "BrunoAce": ["Bruno Ace SC", 'serif'],
+        "Tourney":["Tourney", 'serif'],
+        "Tektur":["Tektur", 'serif'],
+        "Poppins":["Poppins", 'serif'],
+        "Lekton":["Lekton", 'serif'],
+        "DancingScript":["Dancing Script", 'cursive'],
+        "Oxanium":[ "Oxanium", "sans-serif"]
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

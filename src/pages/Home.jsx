@@ -26,11 +26,12 @@ import image7 from "../images/Home/Carousal_Stacker_Buckets.png";
 import image8 from "../images/Home/Carousal_Thimble_press.png";
 import image9 from "../images/Home/Structural_Works_carousal.png";
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-
+import TitleHeading from "@/components/TitleHeading";
+import FounderAbs from "../images/Home/FounderAbs.jpg";
 import { duration } from "@mui/material";
 function Home() {
     const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9];
-   
+
     const text1 = "Precision in every part, excellence in every detail".split(" ");
     return (
         <motion.div>
@@ -41,8 +42,8 @@ function Home() {
                 <Carousel image={images} />
 
             </div>
-           
-            <motion.div className={`${styles.OurFounder}`}>
+
+            {/*<motion.div className={`${styles.OurFounder}`}>
                 <motion.div className={`${styles.OurFounder_para}`}
                     initial={{ x: 100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
@@ -65,38 +66,59 @@ function Home() {
                 >
                     <h1>Our Founder</h1>
                 </motion.div>
-            </motion.div>
-            <div className={`${styles.IsoSection}`}>
+            </motion.div>*/}
+
+
+            <div className="grid p-[2%]  grid-flow-col text-center gap-2 bg-[#e5e4e4e0] max-md:grid-flow-row">
+                <div className="flex justify-evenly items-center flex-col p-[2%] h-full ">
+                    <div className="flex items-center justify-start w-[100%] mb-[2%]">
+                        <TitleHeading title={"OUR FOUNDER"} />
+                    </div>
+
+                    <div><p className="text-[1rem] h-full text-[#00000091]">Group Company INDFAB was promoted as a small scale industry in the year 1985 by Prabhat Palit a techno entrepreneur with over 33 years of varied experience in construction industries.
+                        In this family owned business other two promoters Kalyan Palit and Ashish Palit have worked closely contributing towards growth, consolidation in different functional area, diversification programme and customer relation.
+                    </p></div>
+                </div>
+                <div className="w-full h-full flex justify-center items-center "><motion.img 
+                 initial={{ opacity: 0, scale: 0.8 }}
+                 whileInView={{ opacity: 1, scale: 1 }}
+                 transition={{ duration: 0.8, ease: "easeOut" }}
+                 viewport={{ once: true, amount: 0.5 }}
+                src={FounderAbs} 
+                className={`${styles.FounderImg} h-full object-cover max-md:w-[50%]`}></motion.img></div>
+            </div>
+
+            <div className={`${styles.IsoSection} bg-gradient-to-r from-[#D9D9D9] to-[#a19f9f] text-[#000000A3] border-none p-[2%]`}>
                 <motion.div
                     initial={{ y: -100, opacity: 0, mixBlendMode: "multiply" }}
                     whileInView={{ y: 0, opacity: 1 }}
-                    viewport={{amount: 0.5, once: true }}
+                    viewport={{ amount: 0.5, once: true }}
                     transition={{ delay: 0.2, x: { type: "spring", stiffness: 60 }, opacity: { duration: 1 }, ease: "easeIn", duration: 0.7, }}
 
                 ><img src={iso1} ></img></motion.div>
                 <motion.div
                     initial={{ y: 100, opacity: 0, mixBlendMode: "multiply" }}
                     whileInView={{ y: 0, opacity: 1 }}
-                    viewport={{ amount: 0.5,once: true }}
+                    viewport={{ amount: 0.5, once: true }}
                     transition={{ delay: 0.2, x: { type: "spring", stiffness: 60 }, opacity: { duration: 1 }, ease: "easeIn", duration: 0.7, }}
                 ><img src={iso2}></img></motion.div>
                 <motion.div
                     initial={{ y: -100, opacity: 0, mixBlendMode: "multiply" }}
                     whileInView={{ y: 0, opacity: 1 }}
-                    viewport={{ amount: 0.5,once: true }}
+                    viewport={{ amount: 0.5, once: true }}
                     transition={{ delay: 0.2, x: { type: "spring", stiffness: 60 }, opacity: { duration: 1 }, ease: "easeIn", duration: 0.7, }}
                 ><img src={iso3}></img></motion.div>
                 <div className={`${styles.IsoSectionPara}`}>
                     <motion.p
                         initial={{ x: 100, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
-                        viewport={{ amount: 0.5,once: true }}
+                        viewport={{ amount: 0.5, once: true }}
                         transition={{ delay: 0.2, x: { type: "spring", stiffness: 60 }, opacity: { duration: 1 }, ease: "easeIn", duration: 1, }}
                     >
                         Indfab is proud to announce that we are now ISO certified in three critical standards: ISO 9001 for Quality Management Systems, ISO 14001 for Environmental Management Systems, and ISO 45001 for Occupational Health and Safety Management Systems. This triple certification underscores our commitment to delivering high-quality products, ensuring environmental sustainability, and maintaining the highest safety standards in the industry.
                     </motion.p>
                 </div>
-                <div className={`${styles.Isolink}`}><Link to="/QualitySafety">Read more</Link></div>
+                <div className={`${styles.Isolink}`}><Link to="/QualitySafety" className="p-[1%]">Read more</Link></div>
             </div>
             <div className={`${styles.Section3}`}>
                 <div className={`${styles.Section3line}`}></div>

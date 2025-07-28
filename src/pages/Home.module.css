@@ -166,8 +166,15 @@ body {
     background-color: wheat;
     /* background-image: linear-gradient(to left, #ffffff, #fdf0fc, #ffdfea, #ffd0c9, #ffc7a2, #feca96, #f9cf8a, #efd580, #f2de90, #f6e7a1, #faf0b1, #fff9c2); */
     background-image: linear-gradient(to right, #fff3e5, #e6eaca, #b8e5c1, #78ded1, #17d2f1);
-}
 
+
+}
+.FounderImg
+{
+    box-shadow: -16px 15px 5px -5px rgba(0,0,0,0.75);
+-webkit-box-shadow: -16px 15px 5px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: -16px 15px 5px -5px rgba(0,0,0,0.75);
+}
 .Isolink {
     text-align: center;
     display: grid;
@@ -181,13 +188,16 @@ body {
 }
 
 .IsoSection a {
-    color: red;
+    color: white;
     margin: 1%;
     display: grid;
     grid-template-columns: 2/3;
     font-weight: 500;
+    background-color: #000000;
 }
-
+.IsoSection a:hover{
+    background-color: #414141;
+}
 .IsoSection img {
     mix-blend-mode: multiply;
 }

@@ -18,7 +18,7 @@ function QualitySafety() {
             <CredentialBar />
             <Navbar />
             <div className={`${styles.IntroPic}`}>
-                <h1><span className={styles.title1}>Quality</span> <span className={styles.title2}>&</span> <span className={styles.title3}>Safety</span></h1>
+                <h1 className="text-white "><span className="border-l-4 border-l-red-600 pl-[2%]">Quality</span> <span className={`text-orange-400`}>&</span> <span>Safety</span></h1>
             </div>
             <div className={`${styles.SafetyHealth}`}>
                 <h1 className={`${styles.SafetyHealthTitle}`}>Safety Health&nbsp;

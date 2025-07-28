@@ -1,5 +1,6 @@
 import React from "react";
 import styles from './IntroPic.module.css';
+import { color } from "framer-motion";
 
 function IntroPic({ image, text, style }) {
     const divStyle = {
@@ -7,7 +8,8 @@ function IntroPic({ image, text, style }) {
         ...style,
     };
     const h1text={
-        backgroundColor: "rgba(0, 0, 0, 0.3)",
+        backgroundColor: "#000000D9",
+        color:"silver",
         ...style
     }
     return (

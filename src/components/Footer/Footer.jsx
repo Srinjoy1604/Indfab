@@ -43,7 +43,7 @@ function Footer() {
                     <p>FCI road Nalco Nagar- 759145 Angul,Odisha,India</p>
                 </div>
             </div>
-            <div className={`${styles.FooterBottom}`}><p>&copy; 2024 Indfab,All rights reserved. | Developed by <a href="https://www.linkedin.com/in/srinjoy-roy-161003251/">Srinjoy Roy</a></p>
+            <div className={`${styles.FooterBottom}`}><p>&copy; {new Date().getFullYear()} Indfab, All rights reserved. | Developed by <a href="https://www.linkedin.com/in/srinjoy-roy-161003251/">Srinjoy Roy</a></p>
                 {/*<p>designed by <a href="/">Srinjoy Roy</a></p>*/}
             </div>
         </div>

@@ -322,6 +322,7 @@ border: 1px solid rgba(0, 0, 0, 0.46); */
 .Dropdownshow div {
     /* border: 1px solid black; */
     border-bottom: 2px solid rgb(255, 170, 0);
+    border-bottom: 2px solid rgb(181, 181, 181);
     display: grid;
     place-items: center;
     margin: 2%;
@@ -330,7 +331,7 @@ border: 1px solid rgba(0, 0, 0, 0.46); */
 
 .Dropdownshow div a {
     color: #c6edf0;
-    color: #252831;
+    color: #1e293b;
     text-align: center;
     transition: 0.5s ease-in-out all;
       
@@ -339,9 +340,11 @@ border: 1px solid rgba(0, 0, 0, 0.46); */
 .Dropdownshow div:hover
 {
     background-color: #252831;
+    background-color: #e0f2ff;
 }
 .Dropdownshow div:hover a{
     color: #66dfe7;
+    color: #0c4a6e ;
 }
 
 .Dropdownhide {

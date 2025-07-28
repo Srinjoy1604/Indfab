@@ -456,7 +456,7 @@ function Manufacturing_Unit() {
                     <Link to="/MSME2">
                         <motion.div className={`${styles.WorkshopSectionCard1}`}
                             whileTap={{ scale: 0.9 }}>
-                            <div><h2>Nalconagar</h2></div>
+                            <div><h2 className="font-Oxanium">Nalconagar</h2></div>
                             <motion.div
                             className={`${styles.overlay}`}
                             initial={{ opacity: 0 }}
@@ -477,7 +477,7 @@ function Manufacturing_Unit() {
 
 
                             whileTap={{ scale: 0.9 }}>
-                            <div className={`${styles.cardContent}`}><h2>Meramandali</h2></div>
+                            <div className={`${styles.cardContent}`}><h2 className="font-Oxanium">Meramandali</h2></div>
                             <motion.div
                                 className={`${styles.overlay}`}
                                 initial={{ opacity: 0 }}

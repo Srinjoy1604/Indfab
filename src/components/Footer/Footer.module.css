@@ -76,7 +76,8 @@
     background-color: rgb(213, 213, 213);
     height: min-content;
     padding: 2%;
-    
+    background-image: linear-gradient(to left, #f7616c, #f8838e, #f4a2ad, #edc1c8, #e3dedf);
+    background-image: linear-gradient(to right, #e5e3ec, #b1b5bc, #81888d, #565e5f, #303635);
 
 }
 
@@ -89,7 +90,7 @@
 .FooterTag p {
     background-color: #ff6347;
     background-color: rgb(80, 80, 80);
-   
+   background-image: linear-gradient(to right, #474a4a, #5d605f, #757775, #8e8e8c, #a7a6a4);
 }
 
 .FooterBottom {
@@ -98,6 +99,9 @@
     text-align: center;
     border: 2px solid grey;
     font-size: 0.8rem;
+    background-color: rgb(62, 61, 61);
+    color: silver;
+    
 }
 .LastGroup{
     grid-column: 3/4;

@@ -41,12 +41,13 @@
 
 .DirectorsDesk {
     /* background-image: linear-gradient(to left, #ffffff, #fafafb, #f4f4f7, #eeeff4, #e8eaf0, #dadce2, #cbced5, #bdc0c7, #a4a7ad, #8c8f93, #75777a, #5f6062); */
-    background-image: linear-gradient(to right top, #0d078f, #000e77, #000f5e, #000d46, #07052e);
+    /* background-image: linear-gradient(to right top, #0d078f, #000e77, #000f5e, #000d46, #07052e); */
     background-size: cover;
     /* background-image: linear-gradient(to top, #2800ff, #1f10ec, #1917da, #161cc7, #151eb5, #0d20a1, #0b218d, #0e2079, #111e5f, #141b44, #15162b, #111112);
     background-image: linear-gradient(to bottom, #09123a, #00264c, #00395b, #004d67, #166071, #2a727e, #3d848b, #509698, #5eacac, #6dc3c1, #7ddad6, #8df2ea);
     background-image: linear-gradient(to bottom, #09123a, #002c55, #00476e, #006383, #1e7f96, #3392a3, #48a5af, #5db8bb, #68c6c7, #74d5d3, #80e3de, #8df2ea); */
-    background-image: linear-gradient(to bottom, #09123a, #02315d, #00527f, #00759e, #009ab9, #0fa1b7, #23a8b5, #35aeb2, #2c9898, #23827f, #1b6d68, #125852);
+    /* background-image: linear-gradient(to bottom, #09123a, #02315d, #00527f, #00759e, #009ab9, #0fa1b7, #23a8b5, #35aeb2, #2c9898, #23827f, #1b6d68, #125852); */
+    background-image: url("../images/ABOUTUS/LeaderBg.png");
 }
 
 .DirectorsDesk h1 {
@@ -74,7 +75,7 @@
     align-items: center;
     text-align: center;
     /* background-color: black; */
-    border-radius: 50%;
+    /* border-radius: 50%; */
     width: 100%;
     height: 100%;
     align-content: center;
@@ -91,7 +92,7 @@
 .DirectorName h2 {
     font-size: 1.5rem;
     color: #df920b;
-    color: #000e77;
+    color: #151515;
     font-weight: 600;
     /* background-color: #000d4680; */
 
@@ -100,13 +101,13 @@
 .Quote {
     padding: 2%;
     /* background-color: whitesmoke; */
-    border-radius: 16px;
-    background: rgba(32, 32, 32, 0.54);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3.4px);
-    -webkit-backdrop-filter: blur(3.4px);
-    border: 1px solid rgba(32, 32, 32, 0.3);
+    /* border-radius: 16px; */
+    background: rgb(32, 32, 32);
+    /* border-radius: 16px; */
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    /* backdrop-filter: blur(3.4px); */
+    /* -webkit-backdrop-filter: blur(3.4px); */
+    /* border: 1px solid rgba(32, 32, 32, 0.3); */
     /* position: relative; */
     /* position: relative; */
     
@@ -124,17 +125,17 @@
 }
 .QuoteDiv
 {
-    
-    padding: 2%;
+    margin-top: 2%;
+    /* padding: 2%; */
 }
 .Quote p {
-    color: rgb(255, 166, 0);
+    color: #D9D9D9;
     text-align: center;
     word-wrap: break-word;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     z-index: 2;
     position: relative;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     
 }
 
@@ -149,13 +150,13 @@
 .DirectorDesig h2 {
     font-size: 1.1rem;
     color: #10abc0;
-    color: white;
+    color: rgb(27, 26, 26);
 }
 
 .DirectorImage img {
     width: 300px;
     height: 300px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     padding: 2%;
 }
 
@@ -164,12 +165,12 @@
     /* background-color: wheat; */
     padding: 2%;
     margin: 2%;
-    color: white;
+    color: #00000090;
     /* background-image: linear-gradient(to right top, #0d078f, #251ba6, #372cbe, #473dd7, #564ef0);
     outline: none;
     border: none; */
     font-family: "Poppins", sans-serif;
-    border-left: 3px solid rgb(235, 170, 20);
+    /* border-left: 3px solid rgb(40, 40, 39); */
     /* border-bottom: 3px solid rgb(235, 170, 20); */
 }
 
@@ -191,9 +192,10 @@
 }
 
 .KeyArea {
-    background-image: url("../images/ABOUTUS/blob-scene-haikei5.png");
+    background-image: url("../images/Manufacturing_Unit/BlackBg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .KeyArea h1 {
@@ -270,10 +272,10 @@
 }
 
 .AccordionContentHSE {
-    background: url("../images/ABOUTUS/Rectangle  HSE POLICY.png") no-repeat;
+    background: url("../images/ABOUTUS/BGHSE.png") no-repeat;
     /* background-image: linear-gradient(to left bottom, #47dcdc, #37d0bf, #37c39f, #41b57f, #4ea65e, #628f3f, #6b7827, #6d6218, #62421a, #4a291c, #2a1717, #000000); */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-color: white;
     color: black;
 }

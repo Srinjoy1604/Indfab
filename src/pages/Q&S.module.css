@@ -4,7 +4,7 @@
 .IntroPic {
     width: 100vw;
     height: 100vh;
-    background-image: url("../images//Quality_&_Safety/top-view-steel-hammer-with-other-construction-elements-tools_23-2150576411.jpg");
+    background-image: url("../images//Quality_&_Safety/IntroQ&S.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -17,12 +17,13 @@
 {
     width: 100%;
     height: 100%;
-    text-align: center;
+    text-align: start;
     align-content: center;
     font-size: 4rem;
-    background-color: #6968685d;
+    background-color: #000000DE;
     font-family: Oxanium;
     font-weight: 600;
+    padding: 10%;
 }
 .title1 {
   color: gainsboro;

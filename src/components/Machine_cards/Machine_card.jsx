@@ -77,7 +77,7 @@ function MachineCard({ image, name, specs }) {
                 </Accordion>
             </div>
             <div className={`${styles.Imagediv}`} onClick={() => setActiveImage(image)}><img src={image}></img></div>
-            <div className={`${styles.Namediv}`}><h2>{name}</h2></div>
+            <div className={`${styles.Namediv}`}><h2 className="text-white">{name}</h2></div>
 
 
 

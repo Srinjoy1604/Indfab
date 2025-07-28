@@ -24,8 +24,10 @@
     /* margin: 1%; */
     gap: 20px;
     /* background-color: #000000; */
-    background-image: url("../images//Manufacturing_Unit/RectLight4.svg");
+    background-image: url("../images//Manufacturing_Unit/BlackBg.png");
     background-attachment: fixed;
+    background-size: cover;
+    
 }
 
 /* .MainEqpintroh11

@@ -4,7 +4,7 @@ import CredentialBar from "@/components/CredentialBar/CredentialBar";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import IntroPic from "@/components/IntroPic/IntroPic";
-import img1 from "../images/ABOUTUS/EDITED-ABOUT US.png"
+import img1 from "../images/ABOUTUS/IntroABOUTUS.png"
 import img2 from "../images/ABOUTUS/Grouppic.png";
 import CustomCard3 from "@/components/Cards/CustomCard3";
 import img3 from "../images/ABOUTUS/system-regular-22-build 1.png";
@@ -33,10 +33,10 @@ import AB15 from "../images/ABOUTUS/Golden Jubilee/AB15.jpg";
 import AB16 from "../images/ABOUTUS/Golden Jubilee/AB16.jpg";
 import AB17 from "../images/ABOUTUS/Golden Jubilee/AB17.jpg";
 import AB18 from "../images/ABOUTUS/Golden Jubilee/AB18.jpg";
-import Director from "../images/ABOUTUS/Managerpic.png";
+import Director from "../images/ABOUTUS/MrKalyanPalit115.png";
 import Quotation from "../images/ABOUTUS/QUOTETIONMARK.png";
 import { color, motion } from "framer-motion";
-
+import TitleHeading from "@/components/TitleHeading";
 import {
     Accordion,
     AccordionContent,
@@ -53,7 +53,7 @@ function AboutUs() {
             <Navbar />
             <IntroPic image={img1} text={"About Us"} />
             <div className={`${styles.DirectorsDesk}`}>
-                <h1>
+                {/*<h1>
                     {Managetext.map((el2, i) => (
 
 
@@ -71,8 +71,10 @@ function AboutUs() {
                             
                             >{el2}{""}</motion.span>
                     ))}
-                </h1>
-
+                </h1>*/}
+                <div className="p-[2%]">
+                    <TitleHeading title={"Our Leadership"}/>
+                </div>
                 <div className={`${styles.DirectorWords}`}>
                     <div className={`${styles.DirectorImage}`}>
                         <motion.div
@@ -85,7 +87,7 @@ function AboutUs() {
                         <div className={`${styles.DirectorName}`}><h2>Mr. Kalyan Palit</h2></div>
                         <div className={`${styles.DirectorDesig}`}><h2>Managing partner, Indfab</h2></div>
                     </div>
-                    <div className={`${styles.DirectorWordsPara}`}>
+                    <div className={`${styles.DirectorWordsPara} font-Oxanium font-semibold`}>
                         <p>
                             {text.map((el, i) => (
                                 <motion.span
@@ -107,7 +109,7 @@ function AboutUs() {
                 </div>
                 <div className={`${styles.QuoteDiv}`}>
                     <div className={`${styles.Quote}`}>
-                        <p><img src={Quotation}></img>The years ahead will be the best for those who learn To balance dreams and discipline.The future
+                        <p className="font-DancingScript"><img src={Quotation}></img>The years ahead will be the best for those who learn To balance dreams and discipline.The future
                             Will belong to those who embrace the potential of wider opportunities but recognise the realities
                             of more constraint resources and find new solutions that permit doing more with less.</p>
                         <div>-Rosabeth Moss Kanter</div>
@@ -180,30 +182,16 @@ function AboutUs() {
                 </div>
             </div>
             <div className={`${styles.AccordionDiv}`}>
-                <div className={`${styles.Accordionbox}`}>
+                <div className={`${styles.Accordionbox} `}>
                     <Accordion type="single" collapsible className={`${styles.AccordionBar}`}>
                         <AccordionItem value="item-1" className={`${styles.AccordionItem}`}>
                             <AccordionTrigger className={`${styles.AccordionTrigger}`}>HSE Policy of Indfab</AccordionTrigger>
-                            <AccordionContent className={`${styles.AccordionContent} ${styles.AccordionContentHSE}`}>
-                                <h1>Quality,Environment, Health & Safety Policy</h1>
-                                <p>We strive to meet and exceed our customers need providing for,
-                                    Design, Development, Fabrication,Manufacture & supply of Heavy precision components, machine spares, enginerring equipments,machinery,onsiteTurnkey projects by meeting the statutory/regulatory requirements as applicable to us.
-                                </p>
-                                <p>
-                                    We shall ensure Quality,reliability,on time Delivery & cost effectiveness in our products/services as per need of esteemed customers.
+                            <AccordionContent className={`${styles.AccordionContent} ${styles.AccordionContentHSE} aspect-[1600/1000]`}>
+                                
+                                <div className="p-[2%]"> 
+                                    <TitleHeading title={"Quality,Environment, Health & Safety Policy"} Textcolor={"silver"}/>
+                                </div>
 
-                                    We are committed to make efficient use of natural resources like water, energy ,air,oil etc., reducing and preventing pollution, promoting waste avoidance and recycling measures by adhering to best practices.
-                                </p>
-                                <p>
-                                    We are committed to provide a safe and healthy work environment to our employees, suppliers and customers as an integral parts of business performance.
-
-                                    Quality, Environment, Occupational Health & Safety objectives are established at each functional and operational level as required and get reviewed periodically for it's continuing suitability and performance.
-                                </p>
-                                <p>
-                                    We are committed to ensure continual improvement based upon the practice of risk assessment as per requirement in all associated business processes/activities and shall ensure process efficiency and effectiveness of QEHS Management System in our organization.
-
-                                    We shall comply to the requirement of Social accountability by adpting ethical work culture and business practices.
-                                </p>
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>

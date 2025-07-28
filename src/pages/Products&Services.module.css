@@ -14,7 +14,7 @@
     display: grid;
     place-items: center;
     word-wrap: break-word;
-    background: rgba(0, 0, 0, 0.53);
+    background: rgba(0, 0, 0, 0.90);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(1.2px);
@@ -27,7 +27,7 @@
 .IntroDiv div h1 {
 
     background: #F2804C;
-    background: radial-gradient(circle farthest-corner at center center, #F2804C 0%, #F6B43E 100%);
+    background: radial-gradient(circle farthest-corner at center center, #FFFFFF 0%, #BAB3B3 100%, #050505);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 5rem;
@@ -36,11 +36,13 @@
 }
 
 .AchievDiv {
-    background-color: #ACE9FD;
+    /* background-color: #ACE9FD; */
     text-align: center;
+    background-image: url("../images/Manufacturing_Unit/BlackBg.png");
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-   
+
 }
 
 .AchievDiv h1 {
@@ -55,14 +57,12 @@
     display: grid;
     place-items: center;
     grid-template-columns: repeat(3, 1fr);
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1471%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(172%2c 233%2c 253%2c 1)'%3e%3c/rect%3e%3cpath d='M1440 0L1430.82 0L1440 48.34z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M1430.82 0L1440 48.34L1440 301.95000000000005L749.65 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M749.6500000000001 0L1440 301.95000000000005L1440 382.49000000000007L386.1000000000001 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M386.10000000000014 0L1440 382.49000000000007L1440 499.8900000000001L139.52000000000012 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 560L626.44 560L0 308.25z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 308.25L626.44 560L1027.92 560L0 239.63z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 239.63L1027.92 560L1236.8000000000002 560L0 211.37z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 211.37L1236.8000000000002 560L1300.0900000000001 560L0 127.26z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1471'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
+
 }
 
 .ReburfishedWorkDiv {
-    background-color: #FEF4E2;
+    background-color: #44191B1A;
+
 }
 
 .ReburfishedWorkDivHead {
@@ -79,28 +79,28 @@
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
 }
-.ProcessWorkDiv
-{
+
+.ProcessWorkDiv {
     background-image: url("../images/Products&Services/Mask_group.png");
     background-size: 100% 100%;
 }
-.ProcessofWorkBlock
-{
+
+.ProcessofWorkBlock {
     display: grid;
     place-items: center;
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
-.ProcessofWork1
-{
+
+.ProcessofWork1 {
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 0;
     /* margin: 2%; */
     padding: 2%;
 }
-.ProcessofWork1 h1
-{
+
+.ProcessofWork1 h1 {
     background-color: #F6B43E;
     /* background-image: linear-gradient(to right, #ff77009d, #ff8c00ac, #ffa2009b, #ffb700b1, #ffcc00a7); */
     background-color: rgba(255, 166, 0, 0.525);
@@ -110,24 +110,25 @@
     align-content: center;
     font-size: 2.5rem;
 }
-.ProcessofWork1 div{
+
+.ProcessofWork1 div {
     width: 100%;
 }
-.ProcessofWork1 div img
-{
+
+.ProcessofWork1 div img {
     width: 100%;
 }
-.ProcessofWork2
-{
+
+.ProcessofWork2 {
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 0;
     /* margin: 2%; */
     padding: 2%;
 }
-.ProcessofWork2 h1
-{
+
+.ProcessofWork2 h1 {
     background-color: #F6B43E;
     /* background-image: linear-gradient(to right, #f1ff00, #f4e100, #f1c400, #e9a805, #dd8d18); */
     background-color: #f6b33e94;
@@ -137,21 +138,32 @@
     align-content: center;
     font-size: 2.5rem;
 }
-.ProcessofWork2 div{
+
+.ProcessofWork2 div {
     width: 100%;
 }
-.ProcessofWork2 div img
-{
+
+.ProcessofWork2 div img {
     width: 100%;
 }
+
+.Processbtn {
+    box-shadow: -4px -4px 6px 0px #FFFFFFB2 inset;
+
+    box-shadow: 4px 4px 6px 0px #A3A3A35C inset;
+
+}
+
 @media (max-width:760px) {
     .AchievCard {
         grid-template-columns: repeat(2, 1fr);
     }
-    .ProcessofWork1 h1{
+
+    .ProcessofWork1 h1 {
         font-size: 1.5rem;
     }
-    .ProcessofWork2 h1{
+
+    .ProcessofWork2 h1 {
         font-size: 1.5rem;
     }
 }
@@ -169,41 +181,44 @@
 
     .AchievDiv h1 {
         font-size: 1.5rem;
-     }
+    }
 }
+
 @media (max-width:254px) {
-    .ReburfishedWorkDivHead
-    {
+    .ReburfishedWorkDivHead {
         font-size: 2rem;
     }
 }
+
 @media (max-width:340px) {
-    .ProcessofWork1
-    {
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(2,1fr);
+    .ProcessofWork1 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
-    .ProcessofWork1 h1{
+
+    .ProcessofWork1 h1 {
         height: 100%;
     }
-    .ProcessofWork2
-    {
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(2,1fr);
+
+    .ProcessofWork2 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-template-areas:
-        "text"
-        "image"
+            "text"
+            "image"
         ;
-      
+
     }
+
     .ProcessofWork2 div {
         grid-area: image;
-       
+
     }
-    .ProcessofWork2 h1{
+
+    .ProcessofWork2 h1 {
         height: 100%;
         grid-area: text;
-       
+
     }
 
 }
